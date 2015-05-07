@@ -29,6 +29,15 @@
 -(int)getIntValueForKey:(NSString *)key;
 
 /**
+ *  从字典中获取NSInteger值
+ *
+ *  @param key key
+ *
+ *  @return 返回val
+ */
+-(NSInteger)getIntegerValueForKey:(NSString *)key;
+
+/**
  *  从字典中获取float值
  *
  *  @param key key
@@ -103,6 +112,16 @@
  *  @return 返回val
  */
 -(int)getIntValueForKey:(NSString *)key defaultValue:(int)defaultValue;
+
+/**
+ *  从字典中获取NSInteger值
+ *
+ *  @param key key
+ *  @param defaultValue 默认值
+ *
+ *  @return 返回val
+ */
+-(NSInteger)getIntegerValueForKey:(NSString *)key defaultValue:(NSInteger)defaultValue;
 
 /**
  *  从字典中获取float值

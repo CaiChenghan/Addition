@@ -101,6 +101,51 @@
 }
 
 /**
+ *  从字典中获取NSInteger值
+ *
+ *  @param key key
+ *
+ *  @return 返回val
+ */
+-(NSInteger)getIntegerValueForKey:(NSString *)key
+{
+    return [self getIntegerValueForKey:key defaultValue:0];
+}
+
+/**
+ *  从字典中获取NSInteger值
+ *
+ *  @param key key
+ *  @param defaultValue 默认值
+ *
+ *  @return 返回val
+ */
+-(NSInteger)getIntegerValueForKey:(NSString *)key defaultValue:(NSInteger)defaultValue
+{
+    id tmpValue = [self objectForKey:key];
+    if (tmpValue == nil || tmpValue == [NSNull null])
+    {
+        return defaultValue;
+    }
+    if ([tmpValue isKindOfClass:[NSNumber class]])
+    {
+        return [tmpValue integerValue];
+    }
+    else
+    {
+        @try {
+            return [tmpValue integerValue];
+        }
+        @catch (NSException *exception) {
+            return defaultValue;
+        }
+        @finally {
+            return defaultValue;
+        }
+    }
+}
+
+/**
  *  从字典中获取float值
  *
  *  @param key key
