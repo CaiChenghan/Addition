@@ -11,14 +11,58 @@
 @interface NSString (Addition)
 
 /**
- *  NSStringmd5加密
+ *  NSStringmd5加密 -- 实例化方法
+ *
+ *  @return NSString
+ */
+-(NSString *)md5;
+
+/**
+ *  md5Hash -- 实例化方法
+ *
+ *  @return NSString
+ */
+-(NSString *)md5Hash;
+
+/**
+ *  过滤非法字符
+ *
+ *  @param target 过滤关键字 []{}（#%-*+=_）\\|~(＜＞$%^&*)_+
+ *
+ *  @return 过滤后的字符串
+ */
+-(NSString *)filter:(NSString *)target;
+
+/**
+ *  判断邮箱是否合法
+ *
+ *  @return YES表示合法，NO表示不合法
+ */
+-(BOOL)emailIsLegal;
+
+/**
+ *  判断手机号是否合法
+ *
+ *  @return YES表示合法，NO表示不合法
+ */
+-(BOOL)mobileIsLegal;
+
+/**
+ *  判断身份证号是否合法
+ *
+ *  @return YES表示合法，NO表示不合法
+ */
+-(BOOL)idCardIsLegal;
+
+/**
+ *  NSStringmd5加密 -- 类方法
  *
  *  @return NSString
  */
 +(NSString *)md5:(NSString *)md5String;
 
 /**
- *  md5Hash
+ *  md5Hash -- 类方法
  *
  *  @return NSString
  */

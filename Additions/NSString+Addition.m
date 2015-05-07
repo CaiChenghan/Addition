@@ -17,6 +17,68 @@
  *
  *  @return NSString
  */
+-(NSString *)md5
+{
+    return [NSString md5:self];
+}
+
+/**
+ *  md5Hash -- 实例化方法
+ *
+ *  @return NSString
+ */
+-(NSString *)md5Hash
+{
+    return [NSString md5Hash:self];
+}
+
+/**
+ *  过滤非法字符
+ *
+ *  @param target 过滤关键字 []{}（#%-*+=_）\\|~(＜＞$%^&*)_+
+ *
+ *  @return 过滤后的字符串
+ */
+-(NSString *)filter:(NSString *)target
+{
+    return [NSString filterString:self target:target];
+}
+
+/**
+ *  判断邮箱是否合法
+ *
+ *  @return YES表示合法，NO表示不合法
+ */
+-(BOOL)emailIsLegal
+{
+    return [NSString emailIsLegal:self];
+}
+
+/**
+ *  判断手机号是否合法
+ *
+ *  @return YES表示合法，NO表示不合法
+ */
+-(BOOL)mobileIsLegal
+{
+    return [NSString mobileIsLegal:self];
+}
+
+/**
+ *  判断身份证号是否合法
+ *
+ *  @return YES表示合法，NO表示不合法
+ */
+-(BOOL)idCardIsLegal
+{
+    return [NSString idCardIsLegal:self];
+}
+
+/**
+ *  NSStringmd5加密
+ *
+ *  @return NSString
+ */
 +(NSString *)md5:(NSString *)md5String
 {
     const char *cStr = [md5String UTF8String];
