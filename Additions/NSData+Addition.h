@@ -11,6 +11,13 @@
 @interface NSData (Addition)
 
 /**
+ *  md5
+ *
+ *  @return NSString
+ */
+-(NSString *)md5;
+
+/**
  *  md5Hash
  *
  *  @return NSString
