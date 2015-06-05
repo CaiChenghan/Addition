@@ -168,4 +168,21 @@
     }
 }
 
+/**
+ *  判断字符串是否为纯数字
+ *
+ *  @param string 目标字符串
+ *
+ *  @return YES表示为纯字符串，NO表示为非纯字符串
+ */
++(BOOL)isPureNumandCharacters:(NSString *)string
+{
+    string = [string stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    if(string.length > 0)
+    {
+        return NO;
+    }
+    return YES;
+}
+
 @end
