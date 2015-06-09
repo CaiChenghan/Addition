@@ -7,8 +7,12 @@
 //
 
 #import "NSObject+Addition.h"
+#import "NSString+Addition.h"
 
-#define DefaultKeyedArchiverPath [NSString stringWithFormat:@"%@/Documents/DefaultKeyedArchiver.data", NSHomeDirectory()]
+/**
+ *  默认下载文件存储位置
+ */
+#define DefaultKeyedArchiverPath @"%@/Library/Caches/DefaultKeyedArchiverPath"
 
 @implementation NSObject (Addition)
 
@@ -22,7 +26,16 @@
  */
 +(BOOL)keyedArchiver:(id)obj key:(NSString *)key
 {
-    return [self keyedArchiver:obj key:key path:DefaultKeyedArchiverPath];
+    //构建path
+    BOOL creatSavePathSuccess = [self creatSavePath];
+    if (creatSavePathSuccess)
+    {
+        return [self keyedArchiver:obj key:key path:[self getKeyedArchiverPath:key]];
+    }
+    else
+    {
+        return NO;
+    }
 }
 
 /**
@@ -52,7 +65,7 @@
  */
 +(id)keyedUnarchiver:(NSString *)key
 {
-    return [self keyedUnarchiver:key path:DefaultKeyedArchiverPath];
+    return [self keyedUnarchiver:key path:[self getKeyedArchiverPath:key]];
 }
 
 /**
@@ -68,6 +81,46 @@
     NSMutableData *tpData = [NSMutableData dataWithContentsOfFile:path];
     NSKeyedUnarchiver *keyedUnarchiver = [[NSKeyedUnarchiver alloc]initForReadingWithData:tpData];
     return [keyedUnarchiver decodeObjectForKey:key];
+}
+
+/**
+ *  创建文件夹路径
+ *
+ *  @return YES表示创建成功，NO表示创建失败
+ */
++(BOOL)creatSavePath
+{
+    BOOL success = NO;
+    NSString *pathString = [NSString stringWithFormat:DefaultKeyedArchiverPath, NSHomeDirectory()];
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    BOOL dataSavePathExist = [fileManager fileExistsAtPath:pathString];
+    if (dataSavePathExist == NO)
+    {
+        //路径不存在，则创建
+        BOOL creatResult = [fileManager createDirectoryAtPath:pathString withIntermediateDirectories:YES attributes:nil error:nil];
+        if (creatResult == YES)
+        {
+            NSLog(@"创建文件下载路径成功");
+            success = YES;
+        }
+        else
+        {
+            NSLog(@"创建文件下载路径失败");
+            success = NO;
+        }
+    }
+    else
+    {
+        NSLog(@"文件下载路径已创建");
+        success = YES;
+    }
+    return success;
+}
+
++(NSString *)getKeyedArchiverPath:(NSString *)keyString
+{
+    NSString *path = [NSString stringWithFormat:[NSString stringWithFormat:@"%@/%@",DefaultKeyedArchiverPath,keyString.md5],NSHomeDirectory()];
+    return path;
 }
 
 @end
