@@ -142,7 +142,7 @@
  */
 +(BOOL)mobileIsLegal:(NSString *)mobile
 {
-    NSString *phoneRegex = @"^((13[0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$";
+    NSString *phoneRegex = @"^((13[0-9])|(15[^4,\\D])|(17[0-9])|(18[0,0-9]))\\d{8}$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
     return [phoneTest evaluateWithObject:mobile];
 }
@@ -183,6 +183,30 @@
         return NO;
     }
     return YES;
+}
+
+/**
+ *  判断是否包含汉字
+ *
+ *  @param string 目标字符串
+ *
+ *  @return YES表示包含汉字，NO表示不包含汉字
+ */
++(BOOL)isContainChinese:(NSString *)string
+{
+    BOOL isContainChinese = NO;
+    for (int i = 0; i<string.length; i++)
+    {
+        NSRange range = NSMakeRange(i, 1);
+        NSString *tpString = [string substringWithRange:range];
+        const char *cString=[tpString UTF8String];
+        if (strlen(cString)==3)
+        {
+            isContainChinese = YES;
+            break;
+        }
+    }
+    return isContainChinese;
 }
 
 @end

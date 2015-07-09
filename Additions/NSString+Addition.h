@@ -114,4 +114,13 @@
  */
 +(BOOL)isPureNumandCharacters:(NSString *)string;
 
+/**
+ *  判断是否包含汉字
+ *
+ *  @param string 目标字符串
+ *
+ *  @return YES表示包含汉字，NO表示不包含汉字
+ */
++(BOOL)isContainChinese:(NSString *)string;
+
 @end
