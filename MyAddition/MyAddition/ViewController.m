@@ -19,8 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //170开始的虚拟运营商手机号
-    NSString *st = @"17021096235";
+    //17开始的虚拟运营商手机号
+    NSString *st = @"17621096235";
     BOOL isPhoneNum = [NSString mobileIsLegal:st];
     if (isPhoneNum == YES)
     {
