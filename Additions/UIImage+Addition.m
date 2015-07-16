@@ -208,5 +208,30 @@
     }
 }
 
+#pragma mark - 屏幕截屏
+
+/**
+ *  屏幕截取
+ *
+ *  @return 截取到的图片
+ */
++(UIImage *)screenShot
+{
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake([UIScreen mainScreen].bounds.size.width*[UIScreen mainScreen].scale, [UIScreen mainScreen].bounds.size.height*[UIScreen mainScreen].scale), YES, 0);
+    
+    //设置截屏大小
+    [[[[UIApplication sharedApplication] keyWindow] layer] renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    CGImageRef imageRef = viewImage.CGImage;
+    CGRect rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width*[UIScreen mainScreen].scale,[UIScreen mainScreen].bounds.size.height*[UIScreen mainScreen].scale);
+    
+    CGImageRef imageRefRect =CGImageCreateWithImageInRect(imageRef, rect);
+    UIImage *sendImage = [[UIImage alloc] initWithCGImage:imageRefRect];
+    return sendImage;
+}
 
 @end

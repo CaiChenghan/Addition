@@ -32,7 +32,6 @@
     NSString *pathString = [[[NSBundle mainBundle]resourcePath]stringByAppendingPathComponent:@"2.jpg"];
     NSData *imageData = [NSData dataWithContentsOfFile:pathString];
     NSLog(@"%ld",imageData.length/1000);
-    
 }
 
 

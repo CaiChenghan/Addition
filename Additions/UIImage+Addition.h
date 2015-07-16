@@ -56,4 +56,13 @@
  */
 +(NSData *)compressMyImage:(UIImage *)image size:(int)size;
 
+#pragma mark - 屏幕截屏
+
+/**
+ *  屏幕截取
+ *
+ *  @return 截取到的图片
+ */
++(UIImage *)screenShot;
+
 @end

@@ -10,6 +10,8 @@
 
 @interface NSObject (Addition)
 
+#pragma mark - 归档解挡
+
 /**
  *  归档
  *
