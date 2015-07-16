@@ -19,6 +19,9 @@
 		1B1DA9FD1AFB41E600D0715F /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DA9F61AFB41E600D0715F /* NSObject+Addition.m */; };
 		1B1DA9FE1AFB41E600D0715F /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DA9F81AFB41E600D0715F /* NSString+Addition.m */; };
 		1B1DA9FF1AFB41E600D0715F /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DA9FA1AFB41E600D0715F /* UIColor+Addition.m */; };
+		1B9BD4781B578FD000D4E2F4 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BD4771B578FD000D4E2F4 /* UIImage+Addition.m */; };
+		1B9BD47A1B579E3C00D4E2F4 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BD4791B579E3C00D4E2F4 /* 1.jpg */; };
+		1B9BD47C1B57AC5B00D4E2F4 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BD47B1B57AC5B00D4E2F4 /* 2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,10 @@
 		1B1DA9F81AFB41E600D0715F /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
 		1B1DA9F91AFB41E600D0715F /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
 		1B1DA9FA1AFB41E600D0715F /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		1B9BD4761B578FD000D4E2F4 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
+		1B9BD4771B578FD000D4E2F4 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		1B9BD4791B579E3C00D4E2F4 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		1B9BD47B1B57AC5B00D4E2F4 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,8 @@
 		1B1DA9BD1AFB41CE00D0715F = {
 			isa = PBXGroup;
 			children = (
+				1B9BD47B1B57AC5B00D4E2F4 /* 2.jpg */,
+				1B9BD4791B579E3C00D4E2F4 /* 1.jpg */,
 				1B1DA9EF1AFB41E600D0715F /* Additions */,
 				1B1DA9C81AFB41CF00D0715F /* MyAddition */,
 				1B1DA9E21AFB41CF00D0715F /* MyAdditionTests */,
@@ -150,6 +159,8 @@
 				1B1DA9F81AFB41E600D0715F /* NSString+Addition.m */,
 				1B1DA9F91AFB41E600D0715F /* UIColor+Addition.h */,
 				1B1DA9FA1AFB41E600D0715F /* UIColor+Addition.m */,
+				1B9BD4761B578FD000D4E2F4 /* UIImage+Addition.h */,
+				1B9BD4771B578FD000D4E2F4 /* UIImage+Addition.m */,
 			);
 			name = Additions;
 			path = ../Additions;
@@ -235,9 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9BD47A1B579E3C00D4E2F4 /* 1.jpg in Resources */,
 				1B1DA9D51AFB41CF00D0715F /* Main.storyboard in Resources */,
 				1B1DA9DA1AFB41CF00D0715F /* LaunchScreen.xib in Resources */,
 				1B1DA9D71AFB41CF00D0715F /* Images.xcassets in Resources */,
+				1B9BD47C1B57AC5B00D4E2F4 /* 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +276,7 @@
 				1B1DA9FB1AFB41E600D0715F /* NSData+Addition.m in Sources */,
 				1B1DA9CC1AFB41CF00D0715F /* main.m in Sources */,
 				1B1DA9FC1AFB41E600D0715F /* NSDictionary+Addition.m in Sources */,
+				1B9BD4781B578FD000D4E2F4 /* UIImage+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +471,7 @@
 				1B1DA9EB1AFB41CF00D0715F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B1DA9EC1AFB41CF00D0715F /* Build configuration list for PBXNativeTarget "MyAdditionTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +480,7 @@
 				1B1DA9EE1AFB41CF00D0715F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

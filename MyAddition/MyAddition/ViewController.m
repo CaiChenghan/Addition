@@ -19,20 +19,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //17开始的虚拟运营商手机号
-    NSString *st = @"17621096235";
-    BOOL isPhoneNum = [NSString mobileIsLegal:st];
-    if (isPhoneNum == YES)
-    {
-        //手机号
-        NSLog(@"为手机号");
-    }
-    else
-    {
-        //非手机号
-        NSLog(@"非手机号");
-    }
+    UIImageView *myImageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+    myImageView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:myImageView];
+    UIImage *image = [UIImage fuzzyImage:[UIImage imageNamed:@"1.jpg"]];
+    myImageView.image = image;
+    
+    NSData *tpImageData = [UIImage compressMyImage:[UIImage imageNamed:@"2.jpg"]];
+    NSLog(@"%ld",tpImageData.length/1000);
+    
+    //原始大小
+    NSString *pathString = [[[NSBundle mainBundle]resourcePath]stringByAppendingPathComponent:@"2.jpg"];
+    NSData *imageData = [NSData dataWithContentsOfFile:pathString];
+    NSLog(@"%ld",imageData.length/1000);
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
