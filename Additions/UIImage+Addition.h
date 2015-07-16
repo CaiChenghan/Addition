@@ -56,6 +56,26 @@
  */
 +(NSData *)compressMyImage:(UIImage *)image size:(int)size;
 
+/**
+ *  图片缩放
+ *
+ *  @param image 目标图片
+ *  @param width 缩放之后的图片宽度
+ *
+ *  @return 缩放之后的图片
+ */
++(UIImage *)scaleMyImage:(UIImage *)image width:(CGFloat)width;
+
+/**
+ *  图片缩放
+ *
+ *  @param image 目标图片
+ *  @param size  缩放尺寸
+ *
+ *  @return 缩放之后的图片
+ */
++(UIImage *)scaleMyImage:(UIImage *)image size:(CGSize)size;
+
 #pragma mark - 屏幕截屏
 
 /**
