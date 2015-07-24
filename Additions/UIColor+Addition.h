@@ -41,4 +41,13 @@
  */
 +(UIColor *)colorWithHexString:(NSString *)string alpha:(CGFloat)alpha;
 
+/**
+ *  获取图片颜色 -- 图片主颜色
+ *
+ *  @param image 目标图片
+ *
+ *  @return 图片主颜色
+ */
++(UIColor *)getImageColor:(UIImage *)image;
+
 @end
