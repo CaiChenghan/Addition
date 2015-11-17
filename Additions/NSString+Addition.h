@@ -81,22 +81,20 @@
  *
  *  @param font     字体
  *  @param maxWidth 最大宽度
- *  @param content  文字内容
  *
  *  @return 返回文字所占的区域
  */
--(CGSize)getStringSize:(UIFont *)font maxWidth:(CGFloat)maxWidth content:(NSString *)content;
+-(CGSize)getStringSize:(UIFont *)font maxWidth:(CGFloat)maxWidth;
 
 /**
  *  计算文字所占区域 -- 根据目标尺寸来计算文字所占区域，当文字实际区域大于目标区域的时候，则以目标区域尺寸为文字返回尺寸；如果文字实际区域小于目标区域的时候，则以文字实际尺寸为文字返回尺寸。
  *
  *  @param font    字体
  *  @param size    目标尺寸
- *  @param content 文字内容
  *
  *  @return 返回文字所占的区域
  */
--(CGSize)getStringSize:(UIFont *)font size:(CGSize)size content:(NSString *)content;
+-(CGSize)getStringSize:(UIFont *)font size:(CGSize)size;
 
 /**
  *  NSStringmd5加密 -- 类方法

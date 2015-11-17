@@ -103,13 +103,12 @@
  *
  *  @param font     字体
  *  @param maxWidth 最大宽度
- *  @param content  文字内容
  *
  *  @return 返回文字所占的区域
  */
--(CGSize)getStringSize:(UIFont *)font maxWidth:(CGFloat)maxWidth content:(NSString *)content
+-(CGSize)getStringSize:(UIFont *)font maxWidth:(CGFloat)maxWidth
 {
-    return [self getStringSize:font size:CGSizeMake(maxWidth, CGFLOAT_MAX) content:content];
+    return [NSString getStringSize:font size:CGSizeMake(maxWidth, CGFLOAT_MAX) content:self];
 }
 
 /**
@@ -117,13 +116,12 @@
  *
  *  @param font    字体
  *  @param size    目标尺寸
- *  @param content 文字内容
  *
  *  @return 返回文字所占的区域
  */
 -(CGSize)getStringSize:(UIFont *)font size:(CGSize)size content:(NSString *)content
 {
-    return [NSString getStringSize:font size:size content:content];
+    return [NSString getStringSize:font size:size content:self];
 }
 
 /**
