@@ -119,7 +119,7 @@
  *
  *  @return 返回文字所占的区域
  */
--(CGSize)getStringSize:(UIFont *)font size:(CGSize)size content:(NSString *)content
+-(CGSize)getStringSize:(UIFont *)font size:(CGSize)size
 {
     return [NSString getStringSize:font size:size content:self];
 }
