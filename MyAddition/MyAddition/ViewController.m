@@ -51,6 +51,10 @@
     
 }
 
+-(void)dealloc
+{
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
