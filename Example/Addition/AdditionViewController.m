@@ -19,7 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    UIImageView *tpView = [[UIImageView alloc]init];
+    UIImage *tpImage = [UIImage imageWithColor:[UIColor greenColor]];
+    UIImageView *tpImageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    tpImageView.image = tpImage;
+    [self.view addSubview:tpImageView];
 }
 
 - (void)didReceiveMemoryWarning

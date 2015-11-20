@@ -275,4 +275,30 @@
     return sendImage;
 }
 
+/**
+ *  合成图片，根据颜色值
+ *
+ *  @param color 颜色值
+ *
+ *  @return 合成的图片
+ */
++(UIImage *)imageWithColor:(UIColor *)color
+{
+    //make image opaque for speed optimization if color has alpha = 1.
+    const CGFloat alpha     = CGColorGetAlpha(color.CGColor);
+    const BOOL opaque       = alpha == 1;
+    
+    CGRect rect             = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContextWithOptions(rect.size, opaque, 0);
+    CGContextRef context    = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image          = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 @end

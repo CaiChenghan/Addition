@@ -85,6 +85,15 @@
  */
 +(UIImage *)screenShot;
 
+#pragma mark - 合成图片，根据颜色值
 
+/**
+ *  合成图片，根据颜色值
+ *
+ *  @param color 颜色值
+ *
+ *  @return 合成的图片
+ */
++(UIImage *)imageWithColor:(UIColor *)color;
 
 @end
