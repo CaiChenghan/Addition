@@ -7,6 +7,7 @@
 #import "NSString+Addition.h"
 #import "UIColor+Addition.h"
 #import "UIImage+Addition.h"
+#import "UIView+Addition.h"
 
 FOUNDATION_EXPORT double AdditionVersionNumber;
 FOUNDATION_EXPORT const unsigned char AdditionVersionString[];

@@ -15,5 +15,6 @@
 #import "NSDictionary+Addition.h"
 #import "NSObject+Addition.h"
 #import "UIImage+Addition.h"
+#import "UIView+Addition.h"
 
 #endif

@@ -7,6 +7,7 @@
 //
 
 #import "AdditionViewController.h"
+#import "AdditionFrameworks.h"
 
 @interface AdditionViewController ()
 
@@ -18,7 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    UIImageView *tpView = [[UIImageView alloc]init];
 }
 
 - (void)didReceiveMemoryWarning

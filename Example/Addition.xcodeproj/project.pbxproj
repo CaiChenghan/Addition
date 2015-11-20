@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB64F3F1BFF040800221633 /* NSData+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F341BFF040800221633 /* NSData+Addition.m */; };
+		1BB64F401BFF040800221633 /* NSDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F361BFF040800221633 /* NSDictionary+Addition.m */; };
+		1BB64F411BFF040800221633 /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F381BFF040800221633 /* NSObject+Addition.m */; };
+		1BB64F421BFF040800221633 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F3A1BFF040800221633 /* NSString+Addition.m */; };
+		1BB64F431BFF040800221633 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F3C1BFF040800221633 /* UIColor+Addition.m */; };
+		1BB64F441BFF040800221633 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F3E1BFF040800221633 /* UIImage+Addition.m */; };
+		1BB64F471BFF051800221633 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F461BFF051800221633 /* UIView+Addition.m */; };
 		44CFED7D6CEA0A1C974DA7ED /* Pods_Addition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067CA334578A1C3E033D4F2B /* Pods_Addition_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -38,6 +45,21 @@
 /* Begin PBXFileReference section */
 		067CA334578A1C3E033D4F2B /* Pods_Addition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Addition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B290BE70B531F3D3B0099FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1BB64F321BFF040800221633 /* AdditionFrameworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionFrameworks.h; sourceTree = "<group>"; };
+		1BB64F331BFF040800221633 /* NSData+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Addition.h"; sourceTree = "<group>"; };
+		1BB64F341BFF040800221633 /* NSData+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Addition.m"; sourceTree = "<group>"; };
+		1BB64F351BFF040800221633 /* NSDictionary+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Addition.h"; sourceTree = "<group>"; };
+		1BB64F361BFF040800221633 /* NSDictionary+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Addition.m"; sourceTree = "<group>"; };
+		1BB64F371BFF040800221633 /* NSObject+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Addition.h"; sourceTree = "<group>"; };
+		1BB64F381BFF040800221633 /* NSObject+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Addition.m"; sourceTree = "<group>"; };
+		1BB64F391BFF040800221633 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
+		1BB64F3A1BFF040800221633 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		1BB64F3B1BFF040800221633 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		1BB64F3C1BFF040800221633 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		1BB64F3D1BFF040800221633 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
+		1BB64F3E1BFF040800221633 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		1BB64F451BFF051800221633 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		1BB64F461BFF051800221633 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
 		3A324E31FD88E36B20071B2D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		42F3C92AE5457BDF8372F615 /* Pods-Addition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Addition_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Addition_Example/Pods-Addition_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Addition_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Addition_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +115,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BB64F311BFF040800221633 /* Addition */ = {
+			isa = PBXGroup;
+			children = (
+				1BB64F321BFF040800221633 /* AdditionFrameworks.h */,
+				1BB64F331BFF040800221633 /* NSData+Addition.h */,
+				1BB64F341BFF040800221633 /* NSData+Addition.m */,
+				1BB64F351BFF040800221633 /* NSDictionary+Addition.h */,
+				1BB64F361BFF040800221633 /* NSDictionary+Addition.m */,
+				1BB64F371BFF040800221633 /* NSObject+Addition.h */,
+				1BB64F381BFF040800221633 /* NSObject+Addition.m */,
+				1BB64F391BFF040800221633 /* NSString+Addition.h */,
+				1BB64F3A1BFF040800221633 /* NSString+Addition.m */,
+				1BB64F3B1BFF040800221633 /* UIColor+Addition.h */,
+				1BB64F3C1BFF040800221633 /* UIColor+Addition.m */,
+				1BB64F3D1BFF040800221633 /* UIImage+Addition.h */,
+				1BB64F3E1BFF040800221633 /* UIImage+Addition.m */,
+				1BB64F451BFF051800221633 /* UIView+Addition.h */,
+				1BB64F461BFF051800221633 /* UIView+Addition.m */,
+			);
+			name = Addition;
+			path = ../Addition;
+			sourceTree = "<group>";
+		};
 		40A2C36AC6AE626FA325DFB6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +152,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				1BB64F311BFF040800221633 /* Addition */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for Addition */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -391,8 +437,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* AdditionAppDelegate.m in Sources */,
+				1BB64F431BFF040800221633 /* UIColor+Addition.m in Sources */,
+				1BB64F411BFF040800221633 /* NSObject+Addition.m in Sources */,
+				1BB64F421BFF040800221633 /* NSString+Addition.m in Sources */,
 				6003F5A7195388D20070C39A /* AdditionViewController.m in Sources */,
+				1BB64F3F1BFF040800221633 /* NSData+Addition.m in Sources */,
+				1BB64F471BFF051800221633 /* UIView+Addition.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				1BB64F401BFF040800221633 /* NSDictionary+Addition.m in Sources */,
+				1BB64F441BFF040800221633 /* UIImage+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
