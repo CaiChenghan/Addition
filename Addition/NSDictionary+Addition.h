@@ -10,6 +10,8 @@
 
 @interface NSDictionary (Addition)
 
+- (id)safeObjectForKey:(id)aKey hintClass:(id)cls;
+
 /**
  *  从字典中获取bool值
  *

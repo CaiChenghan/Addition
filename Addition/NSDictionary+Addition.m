@@ -10,6 +10,16 @@
 
 @implementation NSDictionary (Addition)
 
+- (id)safeObjectForKey:(id)aKey hintClass:(id)cls
+{
+    id obj = [self objectForKey:aKey];
+    if (cls && [obj isKindOfClass:cls])
+    {
+        return obj;
+    }
+    return nil;
+}
+
 /**
  *  从字典中获取bool值
  *
