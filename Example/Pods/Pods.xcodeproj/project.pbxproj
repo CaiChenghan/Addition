@@ -107,7 +107,6 @@
 		9B2E761A064459F77EA9870BEF03ACC3 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 431B770DD18C6C810E0ECD250D063471 /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BB9159FBA757600D3D4C0FF645F3911 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB667FDEC11589B26C54AE25F550F2C /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9C031F04D81D0CC702BF801E277B3073 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A5F6EC9C4C2795348152BA100C32B10 /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D4F7D797761C6E0A24E692476EC9BAD /* Addition.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C702438DA49103DD25A507DC8716CA49 /* Addition.bundle */; };
 		9E1AA88E32516246C67FEB7806E8B2F3 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C75DFE8C463E28459A9A9DD7E921822 /* SPTExample.m */; };
 		A090E1335802D26E75D008CC54E3EBE7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5089DA448F1CB0FB085C4E12AFDD53A2 /* XCTest.framework */; };
 		A1DCF9A9C12B7883BBEC2B985690A9F7 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 768E0C437692539220C0D4D914229388 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -224,13 +223,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D727709F3097098995EADFA7066AE2FD;
 			remoteInfo = Addition;
-		};
-		F9D856C894ADFD558F3D6EE7EEC91961 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0831F33C1E41BAC3DDE4D52E9343F63;
-			remoteInfo = "Addition-Addition";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -390,7 +382,6 @@
 		C4318C653F9355DDB7F7553A52F8890D /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
 		C468A58BBD0142C1B15D5D1E99CD14D2 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
 		C6C7CD39279BCFD392135DCF45F61F03 /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
-		C702438DA49103DD25A507DC8716CA49 /* Addition.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Addition.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C868D690588A6B89F532448ECAE12885 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		C8AED26AE4E9BAF55FBDAC31FE86A777 /* UIImage+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
 		CCED4F191CF6AF14514971E7D478CFE1 /* Addition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Addition.modulemap; sourceTree = "<group>"; };
@@ -448,13 +439,6 @@
 				595A04BC68811583B92D4E64236C0928 /* QuartzCore.framework in Frameworks */,
 				5A3DED2AC8EC782575EBFF45ED0E3901 /* UIKit.framework in Frameworks */,
 				A090E1335802D26E75D008CC54E3EBE7 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5E4E88CFB773B99C5BDEEB921F46AF8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,7 +840,6 @@
 		F2D33121578C2298687A2934818F8143 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C702438DA49103DD25A507DC8716CA49 /* Addition.bundle */,
 				32657D9453D20E4597562F9254A2F5C8 /* Addition.framework */,
 				495253EBCBACF406D94D642A18DDE05E /* Expecta.framework */,
 				626BAC419D572B6331143C070FBC546F /* Expecta_Snapshots.framework */,
@@ -1087,23 +1070,6 @@
 			productReference = 0332ADA47E9DC132206C07BB4E067033 /* Specta.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A0831F33C1E41BAC3DDE4D52E9343F63 /* Addition-Addition */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F24A4FCC3FBD7A31C7BADD8C2994D433 /* Build configuration list for PBXNativeTarget "Addition-Addition" */;
-			buildPhases = (
-				42847EE9D18284F18EA4A58C41B42EED /* Sources */,
-				A5E4E88CFB773B99C5BDEEB921F46AF8 /* Frameworks */,
-				C7E50C83EEF46589D301F325C7C36665 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Addition-Addition";
-			productName = "Addition-Addition";
-			productReference = C702438DA49103DD25A507DC8716CA49 /* Addition.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		D727709F3097098995EADFA7066AE2FD /* Addition */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DDE75190415D65571C277EF975F64B2 /* Build configuration list for PBXNativeTarget "Addition" */;
@@ -1116,7 +1082,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				35CAEC5D16E96B7169DF50A2AB9189E7 /* PBXTargetDependency */,
 			);
 			name = Addition;
 			productName = Addition;
@@ -1181,7 +1146,6 @@
 			projectRoot = "";
 			targets = (
 				D727709F3097098995EADFA7066AE2FD /* Addition */,
-				A0831F33C1E41BAC3DDE4D52E9343F63 /* Addition-Addition */,
 				0D888F29E05E498D0CD91A51D28599A5 /* Expecta */,
 				ED4342E27597144E22BA4081D52F6DD1 /* Expecta+Snapshots */,
 				DD86ABD743B0605672C710ADC56EB9DA /* FBSnapshotTestCase */,
@@ -1194,14 +1158,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		096C0937AB8BA6F3E3192FA39A7162EE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D4F7D797761C6E0A24E692476EC9BAD /* Addition.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7E50C83EEF46589D301F325C7C36665 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1256,13 +1212,6 @@
 				9832BD8360E6FCE0ADA548A236419F3C /* UIColor+Addition.m in Sources */,
 				317109292AC8ADB67BC9526B64B20609 /* UIImage+Addition.m in Sources */,
 				71A8A918BEE61A15F341296B45E00E0B /* UIView+Addition.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42847EE9D18284F18EA4A58C41B42EED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1342,12 +1291,6 @@
 			name = Specta;
 			target = 31B49D51716BD98965D6E3ADE09FCD24 /* Specta */;
 			targetProxy = 6E113D305C0603A84D749FB7705659AE /* PBXContainerItemProxy */;
-		};
-		35CAEC5D16E96B7169DF50A2AB9189E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Addition-Addition";
-			target = A0831F33C1E41BAC3DDE4D52E9343F63 /* Addition-Addition */;
-			targetProxy = F9D856C894ADFD558F3D6EE7EEC91961 /* PBXContainerItemProxy */;
 		};
 		83AD87F90E364C6219F95E6D4A29A47C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1563,18 +1506,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		59F35A48B8FFBD46B3B8BB2B66B998E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97700CF6376576469CF529B4C3F43339 /* Addition.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Addition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1813,18 +1744,6 @@
 			};
 			name = Debug;
 		};
-		F9C96312C5528ED883571419A7FE8A94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97700CF6376576469CF529B4C3F43339 /* Addition.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Addition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		FD054477903B1E3D5FC98DADACACA366 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2744A2542946D8DE61ED04D083BCEA56 /* FBSnapshotTestCase.xcconfig */;
@@ -1954,15 +1873,6 @@
 			buildConfigurations = (
 				C996455E547C5A0A105B0B93CD277AAD /* Debug */,
 				1BF96FC1EE381690CF12A6B5B80928D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F24A4FCC3FBD7A31C7BADD8C2994D433 /* Build configuration list for PBXNativeTarget "Addition-Addition" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F9C96312C5528ED883571419A7FE8A94 /* Debug */,
-				59F35A48B8FFBD46B3B8BB2B66B998E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

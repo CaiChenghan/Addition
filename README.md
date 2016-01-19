@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Addition
 
 [![CI Status](http://img.shields.io/travis/蔡成汉/Addition.svg?style=flat)](https://travis-ci.org/蔡成汉/Addition)
@@ -18,7 +17,7 @@ Addition is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Addition', '~>0.0.5'
+pod 'Addition', '~>0.0.6'
 ```
 
 ## Author
@@ -28,6 +27,3 @@ pod 'Addition', '~>0.0.5'
 ## License
 
 Addition is available under the MIT license. See the LICENSE file for more info.
-=======
-#Addition
->>>>>>> d7305d1841f6bc0eb2fa52b7f70635cbddc1b7ac

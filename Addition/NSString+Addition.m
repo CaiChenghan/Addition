@@ -45,6 +45,16 @@
 }
 
 /**
+ *  过滤左右空格
+ *
+ *  @return 过滤后的字符串
+ */
+-(NSString *)filterBothBlank
+{
+    return [NSString filterBothBlank:self];
+}
+
+/**
  *  判断邮箱是否合法
  *
  *  @return YES表示合法，NO表示不合法
@@ -167,6 +177,23 @@
     NSCharacterSet *doNotWant = [NSCharacterSet characterSetWithCharactersInString:target];
     tempString = [[tempString componentsSeparatedByCharactersInSet: doNotWant]componentsJoinedByString:@""];
     return tempString;
+}
+
+/**
+ *  过滤左右空格
+ *
+ *  @param string 原字符串
+ *
+ *  @return 过滤后的字符串
+ */
++(NSString *)filterBothBlank:(NSString *)string
+{
+    NSString *tempStirng = string;
+    if (string != nil)
+    {
+        tempStirng = [tempStirng stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    }
+    return tempStirng;
 }
 
 /**

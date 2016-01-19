@@ -36,6 +36,12 @@
  */
 -(NSString *)filter:(NSString *)target;
 
+/**
+ *  过滤左右空格
+ *
+ *  @return 过滤后的字符串
+ */
+-(NSString *)filterBothBlank;
 
 /**
  *  判断邮箱是否合法
@@ -119,6 +125,15 @@
  *  @return 过滤后的字符串
  */
 +(NSString *)filterString:(NSString *)string target:(NSString *)target;
+
+/**
+ *  过滤左右空格
+ *
+ *  @param string 原字符串
+ *
+ *  @return 过滤后的字符串
+ */
++(NSString *)filterBothBlank:(NSString *)string;
 
 /**
  *  判断邮箱是否合法
