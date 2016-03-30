@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B8A46C31CAB753D00F034E9 /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A46C21CAB753D00F034E9 /* NSArray+Addition.m */; };
+		1B8A46C61CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A46C51CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m */; };
 		1BB64F3F1BFF040800221633 /* NSData+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F341BFF040800221633 /* NSData+Addition.m */; };
 		1BB64F401BFF040800221633 /* NSDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F361BFF040800221633 /* NSDictionary+Addition.m */; };
 		1BB64F411BFF040800221633 /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F381BFF040800221633 /* NSObject+Addition.m */; };
@@ -45,6 +47,10 @@
 /* Begin PBXFileReference section */
 		067CA334578A1C3E033D4F2B /* Pods_Addition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Addition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B290BE70B531F3D3B0099FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1B8A46C11CAB753D00F034E9 /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
+		1B8A46C21CAB753D00F034E9 /* NSArray+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Addition.m"; sourceTree = "<group>"; };
+		1B8A46C41CAB7ACB00F034E9 /* NSMutableDictionary+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Addition.h"; sourceTree = "<group>"; };
+		1B8A46C51CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Addition.m"; sourceTree = "<group>"; };
 		1BB64F321BFF040800221633 /* AdditionFrameworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionFrameworks.h; sourceTree = "<group>"; };
 		1BB64F331BFF040800221633 /* NSData+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Addition.h"; sourceTree = "<group>"; };
 		1BB64F341BFF040800221633 /* NSData+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Addition.m"; sourceTree = "<group>"; };
@@ -123,6 +129,10 @@
 				1BB64F341BFF040800221633 /* NSData+Addition.m */,
 				1BB64F351BFF040800221633 /* NSDictionary+Addition.h */,
 				1BB64F361BFF040800221633 /* NSDictionary+Addition.m */,
+				1B8A46C41CAB7ACB00F034E9 /* NSMutableDictionary+Addition.h */,
+				1B8A46C51CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m */,
+				1B8A46C11CAB753D00F034E9 /* NSArray+Addition.h */,
+				1B8A46C21CAB753D00F034E9 /* NSArray+Addition.m */,
 				1BB64F371BFF040800221633 /* NSObject+Addition.h */,
 				1BB64F381BFF040800221633 /* NSObject+Addition.m */,
 				1BB64F391BFF040800221633 /* NSString+Addition.h */,
@@ -441,6 +451,8 @@
 				1BB64F411BFF040800221633 /* NSObject+Addition.m in Sources */,
 				1BB64F421BFF040800221633 /* NSString+Addition.m in Sources */,
 				6003F5A7195388D20070C39A /* AdditionViewController.m in Sources */,
+				1B8A46C61CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m in Sources */,
+				1B8A46C31CAB753D00F034E9 /* NSArray+Addition.m in Sources */,
 				1BB64F3F1BFF040800221633 /* NSData+Addition.m in Sources */,
 				1BB64F471BFF051800221633 /* UIView+Addition.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
