@@ -18,7 +18,7 @@
  */
 -(void)setMyObject:(id)anObject forKey:(NSString *)aKey;
 {
-    if (anObject != nil && aKey == nil)
+    if (anObject != nil && aKey != nil)
     {
         [self setValue:anObject forKey:aKey];
     }
