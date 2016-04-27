@@ -59,9 +59,6 @@
         @catch (NSException *exception) {
             return defaultValue;
         }
-        @finally {
-            return defaultValue;
-        }
     }
 }
 
@@ -102,9 +99,6 @@
             return [tmpValue intValue];
         }
         @catch (NSException *exception) {
-            return defaultValue;
-        }
-        @finally {
             return defaultValue;
         }
     }
@@ -149,9 +143,6 @@
         @catch (NSException *exception) {
             return defaultValue;
         }
-        @finally {
-            return defaultValue;
-        }
     }
 }
 
@@ -192,9 +183,6 @@
             return [tmpValue floatValue];
         }
         @catch (NSException *exception) {
-            return defaultValue;
-        }
-        @finally {
             return defaultValue;
         }
     }
@@ -239,9 +227,6 @@
         @catch (NSException *exception) {
             return defaultValue;
         }
-        @finally {
-            return defaultValue;
-        }
     }
 }
 
@@ -282,9 +267,6 @@
             return [NSString stringWithFormat:@"%@",tmpValue];
         }
         @catch (NSException *exception) {
-            return defaultValue;
-        }
-        @finally {
             return defaultValue;
         }
     }
