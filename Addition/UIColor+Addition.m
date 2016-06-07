@@ -61,7 +61,7 @@
  *
  *  @return 图片主颜色
  */
-+(UIColor *)getImageColor:(UIImage *)image
++(UIColor *)colorWithImage:(UIImage *)image
 {
     //方法来自http://blog.csdn.net/ki19880210/article/details/38750789
     

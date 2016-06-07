@@ -38,6 +38,16 @@
     [tpDic addEntriesFromDictionary:myDic];
     
     [tpDic setMyObject:@"456" forKey:@"456"];
+    
+    NSString *timeString = [NSDate getCurrentDate];
+    NSLog(@"%@",timeString);
+    
+    NSString *tpString = [NSDate getCurrentTime];
+    NSLog(@"%@",tpString);
+    
+    [NSDate getSepTime:0 endTime:3600 complete:^(NSString *sepTime, NSString *hour, NSString *minute, NSString *second) {
+        NSLog(@"获取完成");
+    }];
 }
 
 - (void)didReceiveMemoryWarning

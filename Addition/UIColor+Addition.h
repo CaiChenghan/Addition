@@ -48,6 +48,6 @@
  *
  *  @return 图片主颜色
  */
-+(UIColor *)getImageColor:(UIImage *)image;
++(UIColor *)colorWithImage:(UIImage *)image;
 
 @end
