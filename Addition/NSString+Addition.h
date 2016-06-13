@@ -202,4 +202,36 @@
  */
 +(CGSize)getStringSize:(UIFont *)font size:(CGSize)size content:(NSString *)content;
 
+/**
+ *  URLString编码
+ *
+ *  @param string URLString
+ *
+ *  @return UTF8编码后的字符串
+ */
++(NSString *)encodeURLString:(NSString *)string;
+
+/**
+ *  URLString编码
+ *
+ *  @return UTF8编码后的字符串
+ */
+-(NSString *)encodeURLString;
+
+/**
+ *  URLString解码
+ *
+ *  @param string URLString
+ *
+ *  @return 对UTF8解码
+ */
++(NSString *)decodeURLString:(NSString *)string;
+
+/**
+ *  URLString解码
+ *
+ *  @return 对UTF8解码
+ */
+-(NSString *)decodeURLString;
+
 @end

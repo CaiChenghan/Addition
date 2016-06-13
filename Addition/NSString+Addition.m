@@ -325,4 +325,50 @@
     }
 }
 
+/**
+ *  URLString编码
+ *
+ *  @param string URLString
+ *
+ *  @return UTF8编码后的字符串
+ */
++(NSString *)encodeURLString:(NSString *)string
+{
+    NSString *encodedString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)string, NULL, (CFStringRef)@":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`", kCFStringEncodingUTF8));
+    return encodedString;
+}
+
+/**
+ *  URLString编码
+ *
+ *  @return UTF8编码后的字符串
+ */
+-(NSString *)encodeURLString
+{
+    return [NSString encodeURLString:self];
+}
+
+/**
+ *  URLString解码
+ *
+ *  @param string URLString
+ *
+ *  @return 对UTF8解码
+ */
++(NSString *)decodeURLString:(NSString *)string
+{
+    NSString *decodedString=(__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL, (__bridge CFStringRef)string, CFSTR(""), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+    return decodedString;
+}
+
+/**
+ *  URLString解码
+ *
+ *  @return 对UTF8解码
+ */
+-(NSString *)decodeURLString
+{
+    return [NSString decodeURLString:self];
+}
+
 @end

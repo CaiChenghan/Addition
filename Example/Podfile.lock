@@ -1,5 +1,5 @@
 PODS:
-  - Addition (0.1.1)
+  - Addition (0.1.2)
   - Expecta (1.0.5)
   - Expecta+Snapshots (2.0.0):
     - Expecta (~> 1.0)
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Addition: ff5910bbce641a50f7de92c608bef5fab6a53010
+  Addition: ed3336c7df6c0c770c34cd9c64fd30babc4412f5
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
