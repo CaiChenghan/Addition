@@ -27,7 +27,7 @@ public extension FBSnapshotTestCase {
         let referenceImagesDirectory = "\(envReferenceImageDirectory)\(suffix)"
         if viewOrLayer.isKindOfClass(UIView) {
           do {
-            try compareSnapshotOfView(viewOrLayer as! UIView, referenceImagesDirectory: referenceImagesDirectory, identifier: identifier, tolerance: 0);
+            try compareSnapshotOfView(viewOrLayer as! UIView, referenceImagesDirectory: referenceImagesDirectory, identifier: identifier, tolerance: 0)
             comparisonSuccess = true
           } catch let error1 as NSError {
             error = error1

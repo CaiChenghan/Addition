@@ -107,4 +107,22 @@
  */
 +(void)getSepTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime complete:(void(^)(NSString *sepTime , NSString *hour, NSString *minute, NSString *second))complete;
 
+/**
+ *  获取时间间隔 -- 结束时间减去开始时间后间隔天时分秒；当不满1天的时候，则显示时分秒。
+ *
+ *  @param startTime 开始时间戳 -- 以1970为基点
+ *  @param endTime   结束时间戳 -- 以1790为基点
+ *  @param complete  获取结果
+ */
+
+/**
+ *  获取时间间隔 -- 结束时间减去开始时间后间隔天时分秒；当不满1天的时候，则显示时分秒。
+ *
+ *  @param maxDay    最大间隔天数 -- 例如2天，则间隔超过48小时的，则显示天（2天），否则显示小时（47）；maxDay默认为2；当maxDay为0时，则时间间隔全部转换为时分秒，并不保留天！！！相当于getSepTime方法。
+ *  @param startTime 开始时间戳 -- 以1970为基点
+ *  @param endTime   结束时间戳 -- 以1790为基点
+ *  @param complete  获取结果
+ */
++(void)getSepTimeWithDay:(NSInteger)maxDay startTime:(NSTimeInterval)startTime endTime:(NSTimeInterval)endTime complete:(void(^)(NSString *sepTime, NSString *day, NSString *hour, NSString *minute, NSString *second))complete;
+
 @end

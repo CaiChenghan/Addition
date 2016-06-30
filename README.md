@@ -17,7 +17,7 @@ Addition is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Addition', '~>0.1.2'
+pod 'Addition', '~>0.1.3'
 ```
 
 ## Author
@@ -30,7 +30,8 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
+- 0.1.3新增NSDate取时间间隔+(void)getSepTimeWithDay...方法。
 - 0.1.2新增NSString的encode和decode方法。
 - 0.1.1新增NSDate扩展，方便时间获取。
-- 更改0.0.9字典取值类型错误问题。
-- 更改0.0.8字典安全赋值书写错误。
+- 0.1.0修复0.0.9字典取值类型错误问题。
+- 0.0.9修复0.0.8字典安全赋值书写错误。

@@ -24,6 +24,7 @@
     tpImageView.image = tpImage;
     [self.view addSubview:tpImageView];
     
+    
     /**
      *  将需要操作的字典转换为可变字典
      */
@@ -45,8 +46,14 @@
     NSString *tpString = [NSDate getCurrentTime];
     NSLog(@"%@",tpString);
     
-    [NSDate getSepTime:0 endTime:3600 complete:^(NSString *sepTime, NSString *hour, NSString *minute, NSString *second) {
-        NSLog(@"获取完成");
+    [NSDate getSepTime:[timeString integerValue] endTime:1467198000 complete:^(NSString *sepTime, NSString *hour, NSString *minute, NSString *second) {
+        NSLog(@"获取完成:%@",sepTime);
+    }];
+//    [NSDate getSepTimeWithDay:[timeString integerValue] endTime:1467422400 complete:^(NSString *sepTime, NSString *day, NSString *hour, NSString *minute, NSString *second) {
+//        NSLog(@"获取完成");
+//    }];
+    [NSDate getSepTimeWithDay:3 startTime:[timeString integerValue] endTime:1467422400 complete:^(NSString *sepTime, NSString *day, NSString *hour, NSString *minute, NSString *second) {
+        NSLog(@"获取完成:%@",sepTime);
     }];
     
     NSString *string = @"http://www.baidu.com/";

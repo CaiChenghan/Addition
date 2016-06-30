@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'Addition_Example', :exclusive => true do
+target 'Addition_Example' do
   pod "Addition", :path => "../"
 end
 
-target 'Addition_Tests', :exclusive => true do
+target 'Addition_Tests' do
   pod "Addition", :path => "../"
 
   pod 'Specta'
