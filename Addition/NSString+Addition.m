@@ -142,8 +142,8 @@
 +(NSString *)md5:(NSString *)md5String
 {
     const char *cStr = [md5String UTF8String];
-    unsigned char result[16];
-    CC_MD5(cStr, (int)strlen(cStr), result); // This is the md5 call
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(cStr, (CC_LONG)strlen(cStr), result);
     return [NSString stringWithFormat:
             @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
             result[0], result[1], result[2], result[3],

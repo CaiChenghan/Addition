@@ -18,27 +18,15 @@
  */
 -(NSString *)md5
 {
-    CC_MD5_CTX md5;
-    
-    CC_MD5_Init(&md5);
-    
-    BOOL done = NO;
-    while(!done)
+    const char* original_str = (const char *)[self bytes];
+    unsigned char digist[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(original_str, (CC_LONG)strlen(original_str), digist);
+    NSMutableString* outPutStr = [NSMutableString stringWithCapacity:10];
+    for(int  i =0; i<CC_MD5_DIGEST_LENGTH;i++)
     {
-        CC_MD5_Update(&md5, [self bytes], (unsigned int)[self length]);
-        if( [self length] == 0 ) done = YES;
+        [outPutStr appendFormat:@"%02x",digist[i]];
     }
-    unsigned char digest[CC_MD5_DIGEST_LENGTH];
-    CC_MD5_Final(digest, &md5);
-    return [NSString stringWithFormat: @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
-                   digest[0], digest[1],
-                   digest[2], digest[3],
-                   digest[4], digest[5],
-                   digest[6], digest[7],
-                   digest[8], digest[9],
-                   digest[10], digest[11],
-                   digest[12], digest[13],
-                   digest[14], digest[15]];
+    return [outPutStr lowercaseString];
 }
 
 /**
