@@ -17,7 +17,7 @@ Addition is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Addition', '~>0.1.4'
+pod 'Addition', '~>0.1.5'
 ```
 
 ## Author
@@ -30,6 +30,7 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
+- 0.1.5新增Base64加密解密方法。
 - 0.1.4修复NSDate的md5方法，原方法md5失败。
 - 0.1.3新增NSDate取时间间隔+(void)getSepTimeWithDay...方法。
 - 0.1.2新增NSString的encode和decode方法。
