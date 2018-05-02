@@ -17,38 +17,30 @@
 @implementation NSObject (Addition)
 
 /**
- *  归档
- *
- *  @param obj 需要归档的类
- *  @param key 归档key
- *
- *  @return YES表示成功，NO表示失败
+ 归档
+ 
+ @param obj target obj
+ @param key key
+ @return success->YES；failure->NO
  */
-+(BOOL)keyedArchiver:(id)obj key:(NSString *)key
-{
-    //构建path
++ (BOOL)keyedArchiver:(id)obj key:(NSString *)key {
     BOOL creatSavePathSuccess = [self creatSavePath];
-    if (creatSavePathSuccess)
-    {
+    if (creatSavePathSuccess) {
         return [self keyedArchiver:obj key:key path:[self getKeyedArchiverPath:key]];
-    }
-    else
-    {
+    } else {
         return NO;
     }
 }
 
 /**
- *  归档
- *
- *  @param obj  需要归档的类
- *  @param key  归档key
- *  @param path 归档路劲
- *
- *  @return YES表示归档成功，NO表示归档失败
+ 归档
+ 
+ @param obj target obj
+ @param key key
+ @param path file save path
+ @return success->YES；failure->NO
  */
-+(BOOL)keyedArchiver:(id)obj key:(NSString *)key path:(NSString *)path
-{
++ (BOOL)keyedArchiver:(id)obj key:(NSString *)key path:(NSString *)path {
     NSMutableData *tpData = [NSMutableData data];
     NSKeyedArchiver *keyedArchiver = [[NSKeyedArchiver alloc]initForWritingWithMutableData:tpData];
     [keyedArchiver encodeObject:obj forKey:key];
@@ -57,68 +49,59 @@
 }
 
 /**
- *  解档
- *
- *  @param key key
- *
- *  @return 解析的结果
+ 解档
+ 
+ @param key key
+ @return obj
  */
-+(id)keyedUnarchiver:(NSString *)key
-{
++ (id)keyedUnarchiver:(NSString *)key {
     return [self keyedUnarchiver:key path:[self getKeyedArchiverPath:key]];
 }
 
 /**
- *  解档
- *
- *  @param key  解挡key
- *  @param path 解挡路径
- *
- *  @return 解析的结果
+ 解档
+ 
+ @param key key
+ @param path file save path
+ @return obj
  */
-+(id)keyedUnarchiver:(NSString *)key path:(NSString *)path
-{
++ (id)keyedUnarchiver:(NSString *)key path:(NSString *)path {
     NSMutableData *tpData = [NSMutableData dataWithContentsOfFile:path];
     NSKeyedUnarchiver *keyedUnarchiver = [[NSKeyedUnarchiver alloc]initForReadingWithData:tpData];
     return [keyedUnarchiver decodeObjectForKey:key];
 }
 
+
 /**
- *  创建文件夹路径
- *
- *  @return YES表示创建成功，NO表示创建失败
+ create file save path
+
+ @return success->YES；failure->NO
  */
-+(BOOL)creatSavePath
-{
++ (BOOL)creatSavePath {
     BOOL success = NO;
     NSString *pathString = [NSString stringWithFormat:DefaultKeyedArchiverPath, NSHomeDirectory()];
     NSFileManager* fileManager = [NSFileManager defaultManager];
     BOOL dataSavePathExist = [fileManager fileExistsAtPath:pathString];
-    if (dataSavePathExist == NO)
-    {
-        //路径不存在，则创建
+    if (dataSavePathExist == NO) {
         BOOL creatResult = [fileManager createDirectoryAtPath:pathString withIntermediateDirectories:YES attributes:nil error:nil];
-        if (creatResult == YES)
-        {
-            NSLog(@"创建文件下载路径成功");
+        if (creatResult == YES) {
             success = YES;
-        }
-        else
-        {
-            NSLog(@"创建文件下载路径失败");
+        } else {
             success = NO;
         }
-    }
-    else
-    {
-        NSLog(@"文件下载路径已创建");
+    } else {
         success = YES;
     }
     return success;
 }
 
-+(NSString *)getKeyedArchiverPath:(NSString *)keyString
-{
+/**
+ get keyedArchiver save path
+
+ @param keyString key
+ @return keyedArchiver save path
+ */
++ (NSString *)getKeyedArchiverPath:(NSString *)keyString {
     NSString *path = [NSString stringWithFormat:[NSString stringWithFormat:@"%@/%@",DefaultKeyedArchiverPath,keyString.md5],NSHomeDirectory()];
     return path;
 }

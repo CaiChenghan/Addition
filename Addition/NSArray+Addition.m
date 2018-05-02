@@ -11,68 +11,33 @@
 @implementation NSArray (Addition)
 
 /**
- *  NAArray获取数据方法
- *
- *  @param index index
- *
- *  @return obj
+ safe get object at index
+ 
+ @param index index
+ @return obj
  */
--(id)getMyObjectAtIndex:(NSUInteger)index
-{
-    /**
-     *  判断取值是否越界，越界则返回nil
-     */
-    if (index < self.count)
-    {
-        /**
-         *  没有越界 -- 正常取值
-         */
+- (id)getObjAtIndex:(NSUInteger)index {
+    if (index < self.count) {
         return [self objectAtIndex:index];
-    }
-    else
-    {
-        /**
-         *  越界 -- 则返回nil
-         */
+    } else {
         return nil;
     }
 }
 
 /**
- *  NSArray获取数据方法
- *
- *  @param index        index
- *  @param defaultIndex defaultIndex
- *
- *  @return obj
+ safe get object at index
+ 
+ @param index index
+ @param defaultIndex defaultIndex
+ @return obj
  */
--(id)getMyObjectAtIndex:(NSUInteger)index defaultIndex:(NSUInteger)defaultIndex;
-
-{
-    /**
-     *  判断取值是否越界，越界则返回nil
-     */
-    if (index < self.count)
-    {
-        /**
-         *  没有越界 -- 则正常取值
-         */
+- (id)getObjAtIndex:(NSUInteger)index defaultIndex:(NSUInteger)defaultIndex {
+    if (index < self.count) {
         return [self objectAtIndex:index];
-    }
-    else
-    {
-        /**
-         *  越界 -- 则取默认index值
-         */
-        if (defaultIndex < self.count)
-        {
+    } else {
+        if (defaultIndex < self.count) {
             return [self objectAtIndex:defaultIndex];
-        }
-        else
-        {
-            /**
-             *  默认index越界
-             */
+        } else {
             return nil;
         }
     }

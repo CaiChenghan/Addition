@@ -29,7 +29,7 @@
      *  将需要操作的字典转换为可变字典
      */
     NSMutableDictionary *tpDic = [NSMutableDictionary dictionary];
-    [tpDic setMyObject:@"123" forKey:@"123"];
+    [tpDic setObj:@"123" forKey:@"123"];
     
     NSDictionary *myDic = [NSDictionary dictionary];
     
@@ -37,8 +37,7 @@
      *  字典克隆字典
      */
     [tpDic addEntriesFromDictionary:myDic];
-    
-    [tpDic setMyObject:@"456" forKey:@"456"];
+    [tpDic setObj:@"456" forKey:@"455"];
     
     NSString *timeString = [NSDate getCurrentDate];
     NSLog(@"%@",timeString);

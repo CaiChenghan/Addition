@@ -11,22 +11,20 @@
 @interface NSArray (Addition)
 
 /**
- *  NAArray获取数据方法
- *
- *  @param index index
- *
- *  @return obj
+ safe get object at index
+
+ @param index index
+ @return obj
  */
--(id)getMyObjectAtIndex:(NSUInteger)index;
+- (id)getObjAtIndex:(NSUInteger)index;
 
 /**
- *  NSArray获取数据方法
- *
- *  @param index        index
- *  @param defaultIndex defaultIndex
- *
- *  @return obj
+ safe get object at index
+
+ @param index index
+ @param defaultIndex defaultIndex
+ @return obj
  */
--(id)getMyObjectAtIndex:(NSUInteger)index defaultIndex:(NSUInteger)defaultIndex;
+- (id)getObjAtIndex:(NSUInteger)index defaultIndex:(NSUInteger)defaultIndex;
 
 @end

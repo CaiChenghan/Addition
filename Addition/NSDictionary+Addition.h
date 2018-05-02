@@ -10,180 +10,166 @@
 
 @interface NSDictionary (Addition)
 
-- (id)safeObjectForKey:(id)aKey hintClass:(id)cls;
+/**
+ get safe value
+
+ @param key key
+ @param hitClass hitClass
+ @return hitClass object
+ */
+- (id)objectForKey:(id)key hitClass:(id)hitClass;
 
 /**
- *  从字典中获取bool值
- *
- *  @param key key
- *
- *  @return 返回val
+ get bool value
+
+ @param key key
+ @return bool value
  */
--(BOOL)getBoolValueForKey:(NSString *)key;
+- (BOOL)getBoolValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取int值
- *
- *  @param key key
- *
- *  @return 返回val
+ get int value
+
+ @param key key
+ @return int value
  */
--(int)getIntValueForKey:(NSString *)key;
+- (int)getIntValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取NSInteger值
- *
- *  @param key key
- *
- *  @return 返回val
+ get integer value
+
+ @param key key
+ @return integer value
  */
--(NSInteger)getIntegerValueForKey:(NSString *)key;
+- (NSInteger)getIntegerValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取float值
- *
- *  @param key key
- *
- *  @return 返回val
+ get float value
+
+ @param key key
+ @return float value
  */
--(float)getFloatValueForKey:(NSString *)key;
+- (float)getFloatValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取long long值
- *
- *  @param key key
- *
- *  @return 返回val
+ get long long value
+
+ @param key key
+ @return long long value
  */
--(long long)getLongLongValueForKey:(NSString *)key;
+- (long long)getLongLongValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取string值
- *
- *  @param key key
- *
- *  @return 返回val
+ get string value
+
+ @param key key
+ @return string value
  */
--(NSString *)getStringValueForKey:(NSString *)key;
+- (NSString *)getStringValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取数组
- *
- *  @param key key
- *
- *  @return 返回val
+ get array value
+
+ @param key key
+ @return array value
  */
--(NSArray *)getArrayValueForKey:(NSString *)key;
+- (NSArray *)getArrayValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取字典
- *
- *  @param key key
- *
- *  @return 返回val
+ get dictionary value
+
+ @param key key
+ @return dictionary value
  */
--(NSDictionary *)getDictionaryValueForKey:(NSString *)key;
+- (NSDictionary *)getDictionaryValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取number
- *
- *  @param key key
- *
- *  @return 返回val
+ get number value
+
+ @param key key
+ @return number value
  */
--(NSNumber *)getNumberValueForKey:(NSString *)key;
-
-
+- (NSNumber *)getNumberValueForKey:(NSString *)key;
 
 /**
- *  从字典中获取bool值
- *
- *  @param key          key
- *  @param defaultValue 默认值
- *
- *  @return 返回val
+ get bool value
+
+ @param key key
+ @param defaultValue defaultValue
+ @return bool value
  */
--(BOOL)getBoolValueForKey:(NSString *)key defaultValue:(BOOL)defaultValue;
+- (BOOL)getBoolValueForKey:(NSString *)key defaultValue:(BOOL)defaultValue;
 
 /**
- *  从字典中获取int值
- *
- *  @param key          key
- *  @param defaultValue 默认值
- *
- *  @return 返回val
+ get int value
+
+ @param key key
+ @param defaultValue defaultValue
+ @return int value
  */
--(int)getIntValueForKey:(NSString *)key defaultValue:(int)defaultValue;
+- (int)getIntValueForKey:(NSString *)key defaultValue:(int)defaultValue;
 
 /**
- *  从字典中获取NSInteger值
- *
- *  @param key key
- *  @param defaultValue 默认值
- *
- *  @return 返回val
+ get integer value
+
+ @param key key
+ @param defaultValue defaultValue
+ @return integer value
  */
--(NSInteger)getIntegerValueForKey:(NSString *)key defaultValue:(NSInteger)defaultValue;
+- (NSInteger)getIntegerValueForKey:(NSString *)key defaultValue:(NSInteger)defaultValue;
 
 /**
- *  从字典中获取float值
- *
- *  @param key          key
- *  @param defaultValue 默认值
- *
- *  @return 返回val
+ get float value
+
+ @param key key
+ @param defaultValue defaultValue
+ @return float value
  */
--(float)getFloatValueForKey:(NSString *)key defaultValue:(float)defaultValue;
+- (float)getFloatValueForKey:(NSString *)key defaultValue:(float)defaultValue;
 
 /**
- *  从字典中获取long long值
- *
- *  @param key          key
- *  @param defaultValue 默认值
- *
- *  @return 返回val
- */
--(long long)getLongLongValueForKey:(NSString *)key defaultValue:(long long)defaultValue;
+ get long long value
 
+ @param key key
+ @param defaultValue defaultValue
+ @return long long value
+ */
+- (long long)getLongLongValueForKey:(NSString *)key defaultValue:(long long)defaultValue;
 
 /**
- *  从字典中获取string值
- *
- *  @param key          key
- *  @param defaultValue 默认值
- *
- *  @return 返回val
+ get string value
+
+ @param key key
+ @param defaultValue defaultValue
+ @return string value
  */
--(NSString *)getStringValueForKey:(NSString *)key defaultValue:(NSString *)defaultValue;
+- (NSString *)getStringValueForKey:(NSString *)key defaultValue:(NSString *)defaultValue;
 
 /**
- *  从字典中获取数组
- *
- *  @param key          key
- *  @param defaultValue 默认值
- *
- *  @return 返回val
+ get array value
+
+ @param key key
+ @param defaultValue defaultValue
+ @return array value
  */
--(NSArray *)getArrayValueForKey:(NSString *)key defaultValue:(NSArray *)defaultValue;
+- (NSArray *)getArrayValueForKey:(NSString *)key defaultValue:(NSArray *)defaultValue;
 
 /**
- *  从字典中获取字典
- *
- *  @param key          key
- *  @param defaultValue 默认值
- *
- *  @return 返回val
+ get dictionary value
+
+ @param key key
+ @param defaultValue defaultValue
+ @return dictionary value
  */
--(NSDictionary *)getDictionaryValueForKey:(NSString *)key defaultValue:(NSDictionary *)defaultValue;
+- (NSDictionary *)getDictionaryValueForKey:(NSString *)key defaultValue:(NSDictionary *)defaultValue;
 
 /**
- *  从字典中获取number
- *
- *  @param key    key
- *  @param number 默认值
- *
- *  @return 返回val
+ get number value
+
+ @param key key
+ @param defaultValue defaultValue
+ @return number val
  */
--(NSNumber *)getNumberValueForKey:(NSString *)key defaultValue:(NSNumber *)defaultValue;
+- (NSNumber *)getNumberValueForKey:(NSString *)key defaultValue:(NSNumber *)defaultValue;
 
 @end

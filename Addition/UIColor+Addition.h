@@ -11,43 +11,39 @@
 @interface UIColor (Addition)
 
 /**
- *  RGB颜色值获取颜色 - 三色取值
- *
- *  @param red   red
- *  @param green green
- *  @param blue  blue
- *  @param alpha 透明度
- *
- *  @return UIColor
+ RGB颜色值获取颜色 - 三色取值
+
+ @param red red
+ @param green green
+ @param blue blue
+ @param alpha alpha
+ @return color
  */
-+(UIColor *)colorWithR:(CGFloat)red G:(CGFloat)green B:(CGFloat)blue A:(CGFloat)alpha;
++ (UIColor *)colorWithR:(CGFloat)red G:(CGFloat)green B:(CGFloat)blue A:(CGFloat)alpha;
 
 /**
- *  RGB颜色值获取颜色 - 十六进制颜色取值
- *
- *  @param string 十六进制颜色值
- *
- *  @return UIColor
+ RGB颜色值获取颜色 - 十六进制颜色取值
+
+ @param string 十六进制颜色值
+ @return color
  */
-+(UIColor *)colorWithHexString:(NSString *)string;
++ (UIColor *)colorWithHexString:(NSString *)string;
 
 /**
- *  RGB颜色值获取颜色 - 十六进制颜色取值
- *
- *  @param string 十六进制颜色值
- *  @param alpha  透明度
- *
- *  @return UIColor
+ RGB颜色值获取颜色 - 十六进制颜色取值
+
+ @param string 十六进制颜色值
+ @param alpha alpha
+ @return color
  */
-+(UIColor *)colorWithHexString:(NSString *)string alpha:(CGFloat)alpha;
++ (UIColor *)colorWithHexString:(NSString *)string alpha:(CGFloat)alpha;
 
 /**
- *  获取图片颜色 -- 图片主颜色
- *
- *  @param image 目标图片
- *
- *  @return 图片主颜色
+ 获取图片主颜色
+
+ @param image image
+ @return color
  */
-+(UIColor *)colorWithImage:(UIImage *)image;
++ (UIColor *)colorWithImage:(UIImage *)image;
 
 @end

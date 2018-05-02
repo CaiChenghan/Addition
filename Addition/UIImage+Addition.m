@@ -12,37 +12,32 @@
 @implementation UIImage (Addition)
 
 /**
- *  图片模糊处理
- *
- *  @param image 目标图片
- *
- *  @return 模糊处理之后的图片
+ 图片模糊处理
+ 
+ @param image 目标图片
+ @return 模糊处理之后的图片
  */
-+(UIImage *)fuzzyImage:(UIImage *)image
-{
++ (UIImage *)fuzzyImage:(UIImage *)image {
     return [self fuzzyImage:image lightAlpha:0.1 radius:10 colorSaturationFactor:1];
 }
 
 /**
- *  图片模糊处理
- *
- *  @param image                 目标图片
- *  @param alpha                 透明度：0~1，0为白，1为深灰色
- *  @param radius                半径：默认为30，推荐为3 半径越大越模糊，半径越小月清楚
- *  @param colorSaturationFactor 色彩饱和度(浓度)因子：0是黑白灰, 9是浓彩色, 1是原色  默认1.8
+ 图片模糊处理
+ 
+ @param image 目标图片
+ @param alpha 透明度：0~1，0为白，1为深灰色
+ @param radius 半径：默认为30，推荐为3 半径越大越模糊，半径越小月清楚
+ @param colorSaturationFactor 色彩饱和度(浓度)因子：0是黑白灰, 9是浓彩色, 1是原色  默认1.8
  “彩度”，英文是称Saturation，即饱和度。将无彩色的黑白灰定为0，最鲜艳定为9s，这样大致分成十阶段，让数值和人的感官直觉一致。
- *
- *  @return 模糊处理之后的图片
+ @return 模糊处理之后的图片
  */
-+(UIImage *)fuzzyImage:(UIImage *)image lightAlpha:(CGFloat)alpha radius:(CGFloat)radius colorSaturationFactor:(CGFloat)colorSaturationFactor
-{
++ (UIImage *)fuzzyImage:(UIImage *)image lightAlpha:(CGFloat)alpha radius:(CGFloat)radius colorSaturationFactor:(CGFloat)colorSaturationFactor {
     UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:alpha];
     return [self fuzzyImage:image radius:radius tintColor:tintColor saturationDeltaFactor:colorSaturationFactor maskImage:nil];
 }
 
 // 内部方法,核心代码,封装了毛玻璃效果 参数:半径,颜色,色彩饱和度
-+(UIImage *)fuzzyImage:(UIImage *)image radius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage
-{
++ (UIImage *)fuzzyImage:(UIImage *)image radius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage {
     CGRect imageRect = { CGPointZero, image.size };
     UIImage *effectImage = image;
     
@@ -97,8 +92,7 @@
             if (hasBlur) {
                 vImageMatrixMultiply_ARGB8888(&effectOutBuffer, &effectInBuffer, saturationMatrix, divisor, NULL, NULL, kvImageNoFlags);
                 effectImageBuffersAreSwapped = YES;
-            }
-            else {
+            } else {
                 vImageMatrixMultiply_ARGB8888(&effectInBuffer, &effectOutBuffer, saturationMatrix, divisor, NULL, NULL, kvImageNoFlags);
             }
         }
@@ -148,59 +142,44 @@
 #pragma mark - 图片压缩
 
 /**
- *  图片压缩 -- 默认压缩为150kb
- *
- *  @param image 目标图片
- *
- *  @return 压缩之后的图片数据
+ 图片压缩 -- 默认压缩为150kb
+ 
+ @param image 目标图片
+ @return 压缩之后的图片数据
  */
-+(NSData *)compressMyImage:(UIImage *)image
-{
++ (NSData *)compressMyImage:(UIImage *)image {
     return [self compressMyImage:image size:150];
 }
 
 /**
- *  图片压缩
- *
- *  @param image 目标图片
- *  @param size  压缩的大小 -- 以kb为单位
- *
- *  @return 压缩之后的图片数据
+ 图片压缩
+ 
+ @param image 目标图片
+ @param size 压缩的大小 -- 以kb为单位
+ @return 压缩之后的图片数据
  */
-+(NSData *)compressMyImage:(UIImage *)image size:(int)size
-{
-    if (image)
-    {
++ (NSData *)compressMyImage:(UIImage *)image size:(int)size {
+    if (image) {
         NSData *tpData= [self reSetMyImage:image size:size andCompressionQuality:1];
         return tpData;
-    }
-    else
-    {
+    } else {
         return nil;
     }
 }
 
 #pragma mark - 采用一个方法，将图片控制在150KB以下
-+(NSData *)reSetMyImage:(UIImage *)image size:(int)size andCompressionQuality:(CGFloat)quality
-{
++(NSData *)reSetMyImage:(UIImage *)image size:(int)size andCompressionQuality:(CGFloat)quality {
     //先检测quality的值，如果quality比0.001还要小，则直接返回数值，否则再进行压缩
     NSData *tpData= UIImageJPEGRepresentation(image, quality);
-    if (quality <= 0.001)
-    {
+    if (quality <= 0.001) {
         return tpData;
-    }
-    else
-    {
-        if (tpData.length>size*1024)
-        {
+    } else {
+        if (tpData.length>size*1024) {
             CGFloat qut = 0.0;
             qut = size/(tpData.length/1024.0);
             return [self reSetMyImage:image size:size andCompressionQuality:quality*qut];
-        }
-        else
-        {
-            if (tpData == nil || tpData.length == 0)
-            {
+        } else {
+            if (tpData == nil || tpData.length == 0) {
                 tpData = UIImageJPEGRepresentation(image, 0.7);
             }
             return tpData;
@@ -209,15 +188,13 @@
 }
 
 /**
- *  图片缩放
- *
- *  @param image 目标图片
- *  @param width 缩放之后的图片宽度
- *
- *  @return 缩放之后的图片
+ 图片缩放
+ 
+ @param image 目标图片
+ @param width 缩放之后的图片宽度
+ @return 缩放之后的图片
  */
-+(UIImage *)scaleMyImage:(UIImage *)image width:(CGFloat)width
-{
++ (UIImage *)scaleMyImage:(UIImage *)image width:(CGFloat)width {
     CGSize imageSize = image.size;
     CGSize targetSize;
     targetSize.width = width;
@@ -226,15 +203,13 @@
 }
 
 /**
- *  图片缩放
- *
- *  @param image 目标图片
- *  @param size  缩放尺寸
- *
- *  @return 缩放之后的图片
+ 图片缩放
+ 
+ @param image 目标图片
+ @param size 缩放尺寸
+ @return 缩放之后的图片
  */
-+(UIImage *)scaleMyImage:(UIImage *)image size:(CGSize)size
-{
++(UIImage *)scaleMyImage:(UIImage *)image size:(CGSize)size {
     // 创建一个bitmap的context
     // 并把它设置成为当前正在使用的context
     UIGraphicsBeginImageContext(size);
@@ -251,12 +226,11 @@
 #pragma mark - 屏幕截屏
 
 /**
- *  屏幕截取
- *
- *  @return 截取到的图片
+ 屏幕截取
+ 
+ @return 截取到的图片
  */
-+(UIImage *)screenShot
-{
++ (UIImage *)screenShot {
     UIGraphicsBeginImageContextWithOptions(CGSizeMake([UIScreen mainScreen].bounds.size.width*[UIScreen mainScreen].scale, [UIScreen mainScreen].bounds.size.height*[UIScreen mainScreen].scale), YES, 0);
     
     //设置截屏大小
@@ -276,14 +250,12 @@
 }
 
 /**
- *  合成图片，根据颜色值
- *
- *  @param color 颜色值
- *
- *  @return 合成的图片
+ 合成图片，根据颜色值
+ 
+ @param color 颜色值
+ @return 合成的图片
  */
-+(UIImage *)imageWithColor:(UIColor *)color
-{
++ (UIImage *)imageWithColor:(UIColor *)color {
     //make image opaque for speed optimization if color has alpha = 1.
     const CGFloat alpha     = CGColorGetAlpha(color.CGColor);
     const BOOL opaque       = alpha == 1;

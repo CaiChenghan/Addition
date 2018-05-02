@@ -11,11 +11,11 @@
 @interface NSMutableDictionary (Addition)
 
 /**
- *  set obj for key
- *
- *  @param anObject obj
- *  @param aKey     key
+ safe set obj for key
+
+ @param obj obj
+ @param key key
  */
--(void)setMyObject:(id)anObject forKey:(NSString *)aKey;
+- (void)setObj:(id)obj forKey:(NSString *)key;
 
 @end
