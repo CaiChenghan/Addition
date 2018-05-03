@@ -22,7 +22,7 @@
     if (hitClass && [obj isKindOfClass:hitClass]) {
         return obj;
     } else {
-        return nil;
+        return [hitClass new];
     }
 }
 
