@@ -60,6 +60,12 @@
     NSLog(@"%@",string);
     string = [string decodeURLString];
     NSLog(@"%@",string);
+    
+    UIImage *viewImage = [UIImage imageFromView:self.view];
+    NSLog(@"%@",viewImage);
+    
+    UIImage *cutImage = [UIImage cutImageWithSize:viewImage rect:CGRectMake(100, 100, 110, 110)];
+    NSLog(@"%@",cutImage);
 }
 
 - (void)didReceiveMemoryWarning

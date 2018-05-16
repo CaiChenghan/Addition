@@ -70,14 +70,24 @@
  */
 +(UIImage *)scaleMyImage:(UIImage *)image size:(CGSize)size;
 
-#pragma mark - 屏幕截屏
+#pragma mark - 视图转图片
 
 /**
- 屏幕截取
+ 视图转图片
 
- @return 截取到的图片
+ @param view 目标视图
+ @return 图片
  */
-+ (UIImage *)screenShot;
++ (UIImage *)imageFromView:(UIView *)view;
+
+/**
+ 图片裁剪
+
+ @param image 目标图片
+ @param rect 裁剪区域
+ @return 裁剪后的图片
+ */
++ (UIImage *)cutImageWithSize:(UIImage *)image rect:(CGRect)rect;
 
 #pragma mark - 合成图片，根据颜色值
 

@@ -223,30 +223,34 @@
     return scaledImage;
 }
 
-#pragma mark - 屏幕截屏
+#pragma mark - 视图转图片
 
 /**
- 屏幕截取
+ 视图转图片
  
- @return 截取到的图片
+ @param view 目标视图
+ @return 图片
  */
-+ (UIImage *)screenShot {
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake([UIScreen mainScreen].bounds.size.width*[UIScreen mainScreen].scale, [UIScreen mainScreen].bounds.size.height*[UIScreen mainScreen].scale), YES, 0);
-    
-    //设置截屏大小
-    [[[[UIApplication sharedApplication] keyWindow] layer] renderInContext:UIGraphicsGetCurrentContext()];
-    
-    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
-    
++ (UIImage *)imageFromView:(UIView *)view {
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
-    CGImageRef imageRef = viewImage.CGImage;
-    CGRect rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width*[UIScreen mainScreen].scale,[UIScreen mainScreen].bounds.size.height*[UIScreen mainScreen].scale);
-    
-    CGImageRef imageRefRect =CGImageCreateWithImageInRect(imageRef, rect);
-    UIImage *sendImage = [[UIImage alloc] initWithCGImage:imageRefRect];
-    CGImageRelease(imageRefRect);
-    return sendImage;
+    return image;
+}
+
+/**
+ 图片裁剪
+ 
+ @param image 目标图片
+ @param rect 裁剪区域
+ @return 裁剪后的图片
+ */
++ (UIImage *)cutImageWithSize:(UIImage *)image rect:(CGRect)rect {
+    CGFloat scale = image.scale;
+    CGRect tpRect = CGRectMake(rect.origin.x*scale, rect.origin.y*scale, rect.size.width*scale, rect.size.height*scale);
+    CGImageRef imageRef = CGImageCreateWithImageInRect(image.CGImage, tpRect);
+    return [UIImage imageWithCGImage:imageRef scale:scale orientation:image.imageOrientation];
 }
 
 /**
