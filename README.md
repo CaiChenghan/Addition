@@ -17,7 +17,7 @@ Addition is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Addition', '~>0.2.2'
+pod 'Addition', '~>0.2.3'
 ```
 
 ## Author
@@ -30,9 +30,10 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
-- 0.2.2 UIImage增加视图转图片和图片裁剪方法；移除屏幕截取方法
-- 0.2.1 NSDictionary安全取值取不到时返回指定类型空数据，例如空字符串、空数组等
-- 0.2.0 iOS最低支持从8.0开始；UIView增加单击扩展；代码整理
+- 0.2.3 UIImage视图转图片对scrollView的支持，可截取整个scrollView页面。
+- 0.2.2 UIImage增加视图转图片和图片裁剪方法；移除屏幕截取方法。
+- 0.2.1 NSDictionary安全取值取不到时返回指定类型空数据，例如空字符串、空数组等，
+- 0.2.0 iOS最低支持从8.0开始；UIView增加单击扩展；代码整理。
 - 0.1.5 新增Base64加密解密方法。
 - 0.1.4 修复NSDate的md5方法，原方法md5失败。
 - 0.1.3 新增NSDate取时间间隔+(void)getSepTimeWithDay...方法。

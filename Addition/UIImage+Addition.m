@@ -232,9 +232,23 @@
  @return 图片
  */
 + (UIImage *)imageFromView:(UIView *)view {
-    UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0);
-    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *image = nil;
+    if ([view isKindOfClass:[UIScrollView class]]) {
+        UIScrollView *scrollView = (UIScrollView *)view;
+        UIGraphicsBeginImageContextWithOptions(scrollView.contentSize, scrollView.opaque, 0);
+        CGPoint originContentOffset = scrollView.contentOffset;
+        CGRect originFrame = scrollView.frame;
+        scrollView.contentOffset = CGPointZero;
+        scrollView.frame = CGRectMake(0, 0, scrollView.contentSize.width, scrollView.contentSize.height);
+        [scrollView.layer renderInContext:UIGraphicsGetCurrentContext()];
+        image = UIGraphicsGetImageFromCurrentImageContext();
+        scrollView.contentOffset = originContentOffset;
+        scrollView.frame = originFrame;
+    } else {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0);
+        [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+        image = UIGraphicsGetImageFromCurrentImageContext();
+    }
     UIGraphicsEndImageContext();
     return image;
 }

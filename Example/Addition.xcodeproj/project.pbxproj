@@ -94,7 +94,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AC7A2AAF3637CB01CBEF5952 /* Pods_Addition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Addition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89DF0EACF86F580A86F1FC1 /* Pods-Addition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Addition_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Addition_Tests/Pods-Addition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FB67D0DCE38B063D460E15C0 /* Addition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Addition.podspec; path = ../Addition.podspec; sourceTree = "<group>"; };
+		FB67D0DCE38B063D460E15C0 /* Addition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Addition.podspec; path = ../Addition.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FEE3E17A332AC4E9896CEB19 /* Pods-Addition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Addition_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Addition_Example/Pods-Addition_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
