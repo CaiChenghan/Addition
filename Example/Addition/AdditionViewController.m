@@ -7,7 +7,12 @@
 //
 
 #import "AdditionViewController.h"
-#import "AdditionFrameworks.h"
+#import "UIImage+Addition.h"
+#import "UIView+Addition.h"
+#import "NSDictionary+Addition.h"
+#import "NSMutableDictionary+Addition.h"
+#import "NSString+Addition.h"
+#import "NSDate+Addition.h"
 
 @interface AdditionViewController ()
 

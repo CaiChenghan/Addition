@@ -53,7 +53,6 @@
 		1B8A46C51CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Addition.m"; sourceTree = "<group>"; };
 		1BB585C81D05835500A87FC1 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
 		1BB585C91D05835500A87FC1 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Addition.m"; sourceTree = "<group>"; };
-		1BB64F321BFF040800221633 /* AdditionFrameworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionFrameworks.h; sourceTree = "<group>"; };
 		1BB64F331BFF040800221633 /* NSData+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Addition.h"; sourceTree = "<group>"; };
 		1BB64F341BFF040800221633 /* NSData+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Addition.m"; sourceTree = "<group>"; };
 		1BB64F351BFF040800221633 /* NSDictionary+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Addition.h"; sourceTree = "<group>"; };
@@ -127,7 +126,6 @@
 		1BB64F311BFF040800221633 /* Addition */ = {
 			isa = PBXGroup;
 			children = (
-				1BB64F321BFF040800221633 /* AdditionFrameworks.h */,
 				1BB64F331BFF040800221633 /* NSData+Addition.h */,
 				1BB64F341BFF040800221633 /* NSData+Addition.m */,
 				1BB64F351BFF040800221633 /* NSDictionary+Addition.h */,
@@ -265,7 +263,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7A105B7DED50852197F84F65 /* [CP] Embed Pods Frameworks */,
+				83162104A0FEE4D9D7AAB8A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,7 +412,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Addition_Tests/Pods-Addition_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7A105B7DED50852197F84F65 /* [CP] Embed Pods Frameworks */ = {
+		83162104A0FEE4D9D7AAB8A5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
