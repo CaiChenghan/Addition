@@ -1,6 +1,6 @@
 # Addition
 
-[![CI Status](http://img.shields.io/travis/蔡成汉/Addition.svg?style=flat)](https://travis-ci.org/蔡成汉/Addition)
+[![CI Status](http://img.shields.io/travis/CaiChenghan/Addition.svg?style=flat)](https://travis-ci.org/CaiChenghan/Addition)
 [![Version](https://img.shields.io/cocoapods/v/Addition.svg?style=flat)](http://cocoapods.org/pods/Addition)
 [![License](https://img.shields.io/cocoapods/l/Addition.svg?style=flat)](http://cocoapods.org/pods/Addition)
 [![Platform](https://img.shields.io/cocoapods/p/Addition.svg?style=flat)](http://cocoapods.org/pods/Addition)
