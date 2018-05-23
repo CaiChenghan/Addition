@@ -1,28 +1,28 @@
 PODS:
-  - Addition (0.2.4):
-    - Addition/NSArray (= 0.2.4)
-    - Addition/NSData (= 0.2.4)
-    - Addition/NSDate (= 0.2.4)
-    - Addition/NSDictionary (= 0.2.4)
-    - Addition/NSDictionary (= 0.2.4)
-    - Addition/NSMutableDictionary (= 0.2.4)
-    - Addition/NSObject (= 0.2.4)
-    - Addition/NSString (= 0.2.4)
-    - Addition/UIColor (= 0.2.4)
-    - Addition/UIImage (= 0.2.4)
-    - Addition/UIView (= 0.2.4)
-  - Addition/NSArray (0.2.4)
-  - Addition/NSData (0.2.4)
-  - Addition/NSDate (0.2.4)
-  - Addition/NSDictionary (0.2.4)
-  - Addition/NSMutableDictionary (0.2.4)
-  - Addition/NSObject (0.2.4):
+  - Addition (0.2.5):
+    - Addition/NSArray (= 0.2.5)
+    - Addition/NSData (= 0.2.5)
+    - Addition/NSDate (= 0.2.5)
+    - Addition/NSDictionary (= 0.2.5)
+    - Addition/NSDictionary (= 0.2.5)
+    - Addition/NSMutableDictionary (= 0.2.5)
+    - Addition/NSObject (= 0.2.5)
+    - Addition/NSString (= 0.2.5)
+    - Addition/UIColor (= 0.2.5)
+    - Addition/UIImage (= 0.2.5)
+    - Addition/UIView (= 0.2.5)
+  - Addition/NSArray (0.2.5)
+  - Addition/NSData (0.2.5)
+  - Addition/NSDate (0.2.5)
+  - Addition/NSDictionary (0.2.5)
+  - Addition/NSMutableDictionary (0.2.5)
+  - Addition/NSObject (0.2.5):
     - Addition/NSString
-  - Addition/NSString (0.2.4):
+  - Addition/NSString (0.2.5):
     - Addition/NSData
-  - Addition/UIColor (0.2.4)
-  - Addition/UIImage (0.2.4)
-  - Addition/UIView (0.2.4)
+  - Addition/UIColor (0.2.5)
+  - Addition/UIImage (0.2.5)
+  - Addition/UIView (0.2.5)
   - Expecta (1.0.5)
   - "Expecta+Snapshots (2.0.0)":
     - Expecta (~> 1.0)
@@ -53,7 +53,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Addition: d7316d649ea5304fd4f28e4579c1225ace8a0498
+  Addition: 797dced828fe8d5d55db89cf04bd7afc7391186a
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   "Expecta+Snapshots": 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547

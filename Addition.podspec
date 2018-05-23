@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Addition"
-  s.version          = "0.2.4"
+  s.version          = "0.2.5"
   s.summary          = "ios扩展类集"
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  #s.source_files = 'Addition/*.{h,m}'
+  s.source_files = 'Addition/Addition.h'
   #s.resource_bundles = {
     
   #}
