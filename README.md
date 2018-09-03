@@ -17,7 +17,7 @@ Addition is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Addition', '~>0.2.5'
+pod 'Addition', '~>0.2.6'
 ```
 
 ## Author
@@ -30,6 +30,7 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
+- 0.2.6 增加UIFont扩展类，用于字体安全赋值。
 - 0.2.5 增加Addition.h文件，方便多个扩展同时引用。
 - 0.2.4 Addition扩展类集采用分层的Subspecs管理，各个分类的使用，需单独引入。
 - 0.2.3 UIImage视图转图片对scrollView的支持，可截取整个scrollView页面。

@@ -19,6 +19,7 @@
 #import "NSObject+Addition.h"
 #import "NSString+Addition.h"
 #import "UIColor+Addition.h"
+#import "UIFont+Addition.h"
 #import "UIImage+Addition.h"
 #import "UIView+Addition.h"
 

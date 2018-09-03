@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Addition"
-  s.version          = "0.2.5"
+  s.version          = "0.2.6"
   s.summary          = "ios扩展类集"
 
 # This description is used to generate tags and improve search results.
@@ -83,6 +83,10 @@ Pod::Spec.new do |s|
   
   s.subspec 'UIView' do |ss|
       ss.source_files  = "Addition/UIView+Addition.{h,m}"
+  end
+  
+  s.subspec 'UIFont' do |ss|
+      ss.source_files  = "Addition/UIFont+Addition.{h,m}"
   end
   
 end

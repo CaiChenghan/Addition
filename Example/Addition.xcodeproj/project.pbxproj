@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B8A46C31CAB753D00F034E9 /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A46C21CAB753D00F034E9 /* NSArray+Addition.m */; };
 		1B8A46C61CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A46C51CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m */; };
+		1BB265BF213D09FF0090378B /* UIFont+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB265BE213D09FF0090378B /* UIFont+Addition.m */; };
 		1BB585CA1D05835500A87FC1 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB585C91D05835500A87FC1 /* NSDate+Addition.m */; };
 		1BB64F3F1BFF040800221633 /* NSData+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F341BFF040800221633 /* NSData+Addition.m */; };
 		1BB64F401BFF040800221633 /* NSDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F361BFF040800221633 /* NSDictionary+Addition.m */; };
@@ -51,6 +52,8 @@
 		1B8A46C21CAB753D00F034E9 /* NSArray+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Addition.m"; sourceTree = "<group>"; };
 		1B8A46C41CAB7ACB00F034E9 /* NSMutableDictionary+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Addition.h"; sourceTree = "<group>"; };
 		1B8A46C51CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Addition.m"; sourceTree = "<group>"; };
+		1BB265BD213D09FF0090378B /* UIFont+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Addition.h"; sourceTree = "<group>"; };
+		1BB265BE213D09FF0090378B /* UIFont+Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Addition.m"; sourceTree = "<group>"; };
 		1BB585C81D05835500A87FC1 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
 		1BB585C91D05835500A87FC1 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Addition.m"; sourceTree = "<group>"; };
 		1BB64F331BFF040800221633 /* NSData+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Addition.h"; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				1BB64F461BFF051800221633 /* UIView+Addition.m */,
 				1BB585C81D05835500A87FC1 /* NSDate+Addition.h */,
 				1BB585C91D05835500A87FC1 /* NSDate+Addition.m */,
+				1BB265BD213D09FF0090378B /* UIFont+Addition.h */,
+				1BB265BE213D09FF0090378B /* UIFont+Addition.m */,
 			);
 			name = Addition;
 			path = ../Addition;
@@ -448,6 +453,7 @@
 				1BB64F411BFF040800221633 /* NSObject+Addition.m in Sources */,
 				1BB64F421BFF040800221633 /* NSString+Addition.m in Sources */,
 				6003F5A7195388D20070C39A /* AdditionViewController.m in Sources */,
+				1BB265BF213D09FF0090378B /* UIFont+Addition.m in Sources */,
 				1B8A46C61CAB7ACB00F034E9 /* NSMutableDictionary+Addition.m in Sources */,
 				1B8A46C31CAB753D00F034E9 /* NSArray+Addition.m in Sources */,
 				1BB64F3F1BFF040800221633 /* NSData+Addition.m in Sources */,

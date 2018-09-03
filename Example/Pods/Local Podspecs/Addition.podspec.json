@@ -1,6 +1,6 @@
 {
   "name": "Addition",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "summary": "ios扩展类集",
   "description": "ios扩展类集，方便ios开发。",
   "homepage": "https://github.com/CaiChenghan/Addition",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/CaiChenghan/Addition.git",
-    "tag": "0.2.5"
+    "tag": "0.2.6"
   },
   "platforms": {
     "ios": "8.0"
@@ -71,6 +71,10 @@
     {
       "name": "UIView",
       "source_files": "Addition/UIView+Addition.{h,m}"
+    },
+    {
+      "name": "UIFont",
+      "source_files": "Addition/UIFont+Addition.{h,m}"
     }
   ]
 }
