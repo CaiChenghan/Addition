@@ -19,7 +19,11 @@
  */
 + (UIFont *)fontOfSize:(CGFloat)fontSize weight:(UIFontWeight)weight {
     if ([UIFont respondsToSelector:@selector(systemFontOfSize:weight:)]) {
-        return [UIFont systemFontOfSize:fontSize weight:weight];
+        if (@available(iOS 8.2, *)) {
+            return [UIFont systemFontOfSize:fontSize weight:weight];
+        } else {
+            return [UIFont systemFontOfSize:fontSize];
+        }
     } else {
         return [UIFont systemFontOfSize:fontSize];
     }
