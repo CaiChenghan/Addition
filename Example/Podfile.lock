@@ -1,30 +1,30 @@
 PODS:
-  - Addition (0.2.6):
-    - Addition/NSArray (= 0.2.6)
-    - Addition/NSData (= 0.2.6)
-    - Addition/NSDate (= 0.2.6)
-    - Addition/NSDictionary (= 0.2.6)
-    - Addition/NSDictionary (= 0.2.6)
-    - Addition/NSMutableDictionary (= 0.2.6)
-    - Addition/NSObject (= 0.2.6)
-    - Addition/NSString (= 0.2.6)
-    - Addition/UIColor (= 0.2.6)
-    - Addition/UIFont (= 0.2.6)
-    - Addition/UIImage (= 0.2.6)
-    - Addition/UIView (= 0.2.6)
-  - Addition/NSArray (0.2.6)
-  - Addition/NSData (0.2.6)
-  - Addition/NSDate (0.2.6)
-  - Addition/NSDictionary (0.2.6)
-  - Addition/NSMutableDictionary (0.2.6)
-  - Addition/NSObject (0.2.6):
+  - Addition (0.2.7):
+    - Addition/NSArray (= 0.2.7)
+    - Addition/NSData (= 0.2.7)
+    - Addition/NSDate (= 0.2.7)
+    - Addition/NSDictionary (= 0.2.7)
+    - Addition/NSDictionary (= 0.2.7)
+    - Addition/NSMutableDictionary (= 0.2.7)
+    - Addition/NSObject (= 0.2.7)
+    - Addition/NSString (= 0.2.7)
+    - Addition/UIColor (= 0.2.7)
+    - Addition/UIFont (= 0.2.7)
+    - Addition/UIImage (= 0.2.7)
+    - Addition/UIView (= 0.2.7)
+  - Addition/NSArray (0.2.7)
+  - Addition/NSData (0.2.7)
+  - Addition/NSDate (0.2.7)
+  - Addition/NSDictionary (0.2.7)
+  - Addition/NSMutableDictionary (0.2.7)
+  - Addition/NSObject (0.2.7):
     - Addition/NSString
-  - Addition/NSString (0.2.6):
+  - Addition/NSString (0.2.7):
     - Addition/NSData
-  - Addition/UIColor (0.2.6)
-  - Addition/UIFont (0.2.6)
-  - Addition/UIImage (0.2.6)
-  - Addition/UIView (0.2.6)
+  - Addition/UIColor (0.2.7)
+  - Addition/UIFont (0.2.7)
+  - Addition/UIImage (0.2.7)
+  - Addition/UIView (0.2.7)
   - Expecta (1.0.5)
   - "Expecta+Snapshots (2.0.0)":
     - Expecta (~> 1.0)
@@ -55,7 +55,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Addition: 4c448968ff97f8311c5f34093d40eaea3162b387
+  Addition: 907dc1bc3d7c60d3defd97deff256a5b693346c2
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   "Expecta+Snapshots": 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
