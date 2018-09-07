@@ -316,4 +316,35 @@
     }
 }
 
+/**
+ 图片裁剪圆角
+ 
+ @param image 原始图片
+ @param size 裁剪尺寸
+ @param corners 圆角：UIRectCornerTopLeft、UIRectCornerTopRight等
+ @param cornerRadius 角度
+ @param complete 完成
+ */
++ (void)cornerImage:(UIImage *)image size:(CGSize)size roundingCorners:(UIRectCorner)corners cornerRadius:(CGFloat)cornerRadius complete:(void(^)(UIImage *cornerImage))complete {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        UIImage *cornerImage = nil;
+        if (image) {
+            CGRect rect = CGRectMake(0, 0, size.width, size.height);
+            UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+            CGContextRef contextRef = UIGraphicsGetCurrentContext();
+            UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
+            CGContextAddPath(contextRef, path.CGPath);
+            CGContextClip(contextRef);
+            [image drawInRect:rect];
+            cornerImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (complete) {
+                complete(cornerImage);
+            }
+        });
+    });
+}
+
 @end

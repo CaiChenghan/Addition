@@ -99,15 +99,15 @@
  */
 + (UIImage *)imageWithColor:(UIColor *)color;
 
-
 /**
  图片裁剪圆角
 
  @param image 原始图片
+ @param size 裁剪尺寸
  @param corners 圆角：UIRectCornerTopLeft、UIRectCornerTopRight等
  @param cornerRadius 角度
- @return 圆角图片
+ @param complete 完成
  */
-+ (UIImage *)cornerImage:(UIImage *)image roundingCorners:(UIRectCorner)corners cornerRadius:(CGFloat)cornerRadius;
++ (void)cornerImage:(UIImage *)image size:(CGSize)size roundingCorners:(UIRectCorner)corners cornerRadius:(CGFloat)cornerRadius complete:(void(^)(UIImage *cornerImage))complete;
 
 @end
