@@ -30,7 +30,7 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
-- 0.2.7 图片裁剪优化。
+- 0.2.8 图片裁剪优化。
 - 0.2.7 增加UIImage扩展，用于图片圆角裁剪。
 - 0.2.6 增加UIFont扩展，用于字体安全赋值。
 - 0.2.5 增加Addition.h文件，方便多个扩展同时引用。
