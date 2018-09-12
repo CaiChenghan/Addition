@@ -17,7 +17,7 @@ Addition is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Addition', '~>0.2.8'
+pod 'Addition', '~>0.2.9'
 ```
 
 ## Author
@@ -30,6 +30,7 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
+- 0.2.9 NSDate时间戳转标准时间方法补充。
 - 0.2.8 图片裁剪优化。
 - 0.2.7 增加UIImage扩展，用于图片圆角裁剪。
 - 0.2.6 增加UIFont扩展，用于字体安全赋值。

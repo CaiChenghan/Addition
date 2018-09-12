@@ -120,8 +120,19 @@
  @return 标准时间
  */
 + (NSString *)getCurrentTime:(NSString *)string {
+    return [NSDate getCurrentTime:string dateFormat:@"yyyy-MM-dd HH:mm:ss"];
+}
+
+/**
+ 时间戳转标准时间
+ 
+ @param string 时间戳
+ @param dateFormat 时间格式，如“yyyy-MM-dd HH:mm:ss”
+ @return 标准时间
+ */
++ (NSString *)getCurrentTime:(NSString *)string dateFormat:(NSString *)dateFormat {
     NSDateFormatter *tpDateformatter=[[NSDateFormatter alloc]init];
-    [tpDateformatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    [tpDateformatter setDateFormat:(dateFormat && dateFormat.length > 0) ? dateFormat : @"yyyy-MM-dd HH:mm:ss"];
     return [tpDateformatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:[string doubleValue]]];
 }
 

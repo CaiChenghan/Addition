@@ -97,6 +97,15 @@
 + (NSString *)getCurrentTime:(NSString *)string;
 
 /**
+ 时间戳转标准时间
+
+ @param string 时间戳
+ @param dateFormat 时间格式，如“yyyy-MM-dd HH:mm:ss”
+ @return 标准时间
+ */
++ (NSString *)getCurrentTime:(NSString *)string dateFormat:(NSString *)dateFormat;
+
+/**
  获取时间间隔 -- 结束时间减去开始时间后间隔时分秒
 
  @param startTime 开始时间戳 -- 以1970为基点
