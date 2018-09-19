@@ -1,30 +1,30 @@
 PODS:
-  - Addition (0.2.9):
-    - Addition/NSArray (= 0.2.9)
-    - Addition/NSData (= 0.2.9)
-    - Addition/NSDate (= 0.2.9)
-    - Addition/NSDictionary (= 0.2.9)
-    - Addition/NSDictionary (= 0.2.9)
-    - Addition/NSMutableDictionary (= 0.2.9)
-    - Addition/NSObject (= 0.2.9)
-    - Addition/NSString (= 0.2.9)
-    - Addition/UIColor (= 0.2.9)
-    - Addition/UIFont (= 0.2.9)
-    - Addition/UIImage (= 0.2.9)
-    - Addition/UIView (= 0.2.9)
-  - Addition/NSArray (0.2.9)
-  - Addition/NSData (0.2.9)
-  - Addition/NSDate (0.2.9)
-  - Addition/NSDictionary (0.2.9)
-  - Addition/NSMutableDictionary (0.2.9)
-  - Addition/NSObject (0.2.9):
+  - Addition (0.3.0):
+    - Addition/NSArray (= 0.3.0)
+    - Addition/NSData (= 0.3.0)
+    - Addition/NSDate (= 0.3.0)
+    - Addition/NSDictionary (= 0.3.0)
+    - Addition/NSDictionary (= 0.3.0)
+    - Addition/NSMutableDictionary (= 0.3.0)
+    - Addition/NSObject (= 0.3.0)
+    - Addition/NSString (= 0.3.0)
+    - Addition/UIColor (= 0.3.0)
+    - Addition/UIFont (= 0.3.0)
+    - Addition/UIImage (= 0.3.0)
+    - Addition/UIView (= 0.3.0)
+  - Addition/NSArray (0.3.0)
+  - Addition/NSData (0.3.0)
+  - Addition/NSDate (0.3.0)
+  - Addition/NSDictionary (0.3.0)
+  - Addition/NSMutableDictionary (0.3.0)
+  - Addition/NSObject (0.3.0):
     - Addition/NSString
-  - Addition/NSString (0.2.9):
+  - Addition/NSString (0.3.0):
     - Addition/NSData
-  - Addition/UIColor (0.2.9)
-  - Addition/UIFont (0.2.9)
-  - Addition/UIImage (0.2.9)
-  - Addition/UIView (0.2.9)
+  - Addition/UIColor (0.3.0)
+  - Addition/UIFont (0.3.0)
+  - Addition/UIImage (0.3.0)
+  - Addition/UIView (0.3.0)
   - Expecta (1.0.5)
   - "Expecta+Snapshots (2.0.0)":
     - Expecta (~> 1.0)
@@ -44,7 +44,7 @@ DEPENDENCIES:
   - Specta
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Expecta
     - "Expecta+Snapshots"
     - FBSnapshotTestCase
@@ -55,7 +55,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Addition: 17e3d2215a49a18656f97cbb7a2fab1afc3be0b3
+  Addition: a97e5bb892520bc7e29295115de5498aee1f3d9f
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   "Expecta+Snapshots": 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
@@ -63,4 +63,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3a2cac8be6c1e6b98b0c5eaaaaded6a3e48ccaea
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

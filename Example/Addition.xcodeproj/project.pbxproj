@@ -18,6 +18,8 @@
 		1BB64F431BFF040800221633 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F3C1BFF040800221633 /* UIColor+Addition.m */; };
 		1BB64F441BFF040800221633 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F3E1BFF040800221633 /* UIImage+Addition.m */; };
 		1BB64F471BFF051800221633 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB64F461BFF051800221633 /* UIView+Addition.m */; };
+		1BF2715F21510C1700FA0809 /* 11001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2715E21510C1700FA0809 /* 11001.jpeg */; };
+		1BF2716121510D2C00FA0809 /* 11002.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2716021510D2C00FA0809 /* 11002.jpeg */; };
 		4CAEB5629600442339E2A8A3 /* Pods_Addition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7A2AAF3637CB01CBEF5952 /* Pods_Addition_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -71,6 +73,8 @@
 		1BB64F451BFF051800221633 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
 		1BB64F461BFF051800221633 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
 		1BB8DD9120B506530054E45C /* Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Addition.h; sourceTree = "<group>"; };
+		1BF2715E21510C1700FA0809 /* 11001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11001.jpeg; sourceTree = "<group>"; };
+		1BF2716021510D2C00FA0809 /* 11002.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11002.jpeg; sourceTree = "<group>"; };
 		3A324E31FD88E36B20071B2D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* Addition_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Addition_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,6 +165,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				1BF2716021510D2C00FA0809 /* 11002.jpeg */,
+				1BF2715E21510C1700FA0809 /* 11001.jpeg */,
 				1BB64F311BFF040800221633 /* Addition */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for Addition */,
@@ -344,6 +350,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				1BF2716121510D2C00FA0809 /* 11002.jpeg in Resources */,
+				1BF2715F21510C1700FA0809 /* 11001.jpeg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);

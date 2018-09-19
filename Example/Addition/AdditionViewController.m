@@ -24,53 +24,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    UIImage *tpImage = [UIImage imageWithColor:[UIColor greenColor]];
-    UIImageView *tpImageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    tpImageView.image = tpImage;
-    [self.view addSubview:tpImageView];
     
-    
-    /**
-     *  将需要操作的字典转换为可变字典
-     */
-    NSMutableDictionary *tpDic = [NSMutableDictionary dictionary];
-    [tpDic setObj:@"123" forKey:@"123"];
-    
-    NSDictionary *myDic = [NSDictionary dictionary];
-    
-    /**
-     *  字典克隆字典
-     */
-    [tpDic addEntriesFromDictionary:myDic];
-    [tpDic setObj:@"456" forKey:@"455"];
-    
-    NSString *timeString = [NSDate getCurrentDate];
-    NSLog(@"%@",timeString);
-    
-    NSString *tpString = [NSDate getCurrentTime];
-    NSLog(@"%@",tpString);
-    
-    [NSDate getSepTime:[timeString integerValue] endTime:1467198000 complete:^(NSString *sepTime, NSString *hour, NSString *minute, NSString *second) {
-        NSLog(@"获取完成:%@",sepTime);
+    NSLog(@"开始");
+    [UIImage fuzzyImage:[UIImage imageNamed:@"11002.jpeg"] size:CGSizeMake(320, 480) complete:^(UIImage *fuzzyImage) {
+        NSLog(@"结束");
     }];
-//    [NSDate getSepTimeWithDay:[timeString integerValue] endTime:1467422400 complete:^(NSString *sepTime, NSString *day, NSString *hour, NSString *minute, NSString *second) {
-//        NSLog(@"获取完成");
-//    }];
-    [NSDate getSepTimeWithDay:3 startTime:[timeString integerValue] endTime:1467422400 complete:^(NSString *sepTime, NSString *day, NSString *hour, NSString *minute, NSString *second) {
-        NSLog(@"获取完成:%@",sepTime);
-    }];
-    
-    NSString *string = @"http://www.baidu.com/";
-    string = [string encodeURLString];
-    NSLog(@"%@",string);
-    string = [string decodeURLString];
-    NSLog(@"%@",string);
-    
-    UIImage *viewImage = [UIImage imageFromView:self.view];
-    NSLog(@"%@",viewImage);
-    
-    UIImage *cutImage = [UIImage cutImageWithSize:viewImage rect:CGRectMake(100, 100, 110, 110)];
-    NSLog(@"%@",cutImage);
 }
 
 - (void)didReceiveMemoryWarning
