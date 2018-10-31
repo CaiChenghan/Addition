@@ -282,11 +282,15 @@
  @return 合成的图片
  */
 + (UIImage *)imageWithColor:(UIColor *)color {
+    return [UIImage imageWithColor:color size:CGSizeMake(1.0f, 1.0f)];
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
     //make image opaque for speed optimization if color has alpha = 1.
     const CGFloat alpha     = CGColorGetAlpha(color.CGColor);
     const BOOL opaque       = alpha == 1;
     
-    CGRect rect             = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    CGRect rect             = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContextWithOptions(rect.size, opaque, 0);
     CGContextRef context    = UIGraphicsGetCurrentContext();
     

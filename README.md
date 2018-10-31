@@ -17,7 +17,7 @@ Addition is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Addition', '~>0.3.0'
+pod 'Addition', '~>1.1.0'
 ```
 
 ## Author
@@ -30,7 +30,8 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
-- 0.3.0 UIImage图片模糊方法采用异步处理，同时增加尺寸参数，减少磨砂时间消耗。
+- 1.1.0 UIImage颜色绘制图片，增加尺寸控制。
+- 1.0.0 UIImage图片模糊方法采用异步处理，同时增加尺寸参数，减少磨砂时间消耗。
 - 0.2.9 NSDate时间戳转标准时间方法补充。
 - 0.2.8 图片裁剪优化。
 - 0.2.7 增加UIImage扩展，用于图片圆角裁剪。

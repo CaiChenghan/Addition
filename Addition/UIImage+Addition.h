@@ -100,6 +100,7 @@
  @return 合成的图片
  */
 + (UIImage *)imageWithColor:(UIColor *)color;
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 
 /**
  图片裁剪圆角
