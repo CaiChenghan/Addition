@@ -272,7 +272,9 @@
     CGFloat scale = image.scale;
     CGRect tpRect = CGRectMake(rect.origin.x*scale, rect.origin.y*scale, rect.size.width*scale, rect.size.height*scale);
     CGImageRef imageRef = CGImageCreateWithImageInRect(image.CGImage, tpRect);
-    return [UIImage imageWithCGImage:imageRef scale:scale orientation:image.imageOrientation];
+    UIImage *cutImage = [UIImage imageWithCGImage:imageRef scale:scale orientation:image.imageOrientation];
+    CGImageRelease(imageRef);
+    return cutImage;
 }
 
 /**
