@@ -7,12 +7,6 @@
 //
 
 #import "AdditionViewController.h"
-#import "UIImage+Addition.h"
-#import "UIView+Addition.h"
-#import "NSDictionary+Addition.h"
-#import "NSMutableDictionary+Addition.h"
-#import "NSString+Addition.h"
-#import "NSDate+Addition.h"
 
 @interface AdditionViewController ()
 
@@ -24,11 +18,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    NSLog(@"开始");
-    [UIImage fuzzyImage:[UIImage imageNamed:@"11002.jpeg"] size:CGSizeMake(320, 480) complete:^(UIImage *fuzzyImage) {
-        NSLog(@"结束");
-    }];
 }
 
 - (void)didReceiveMemoryWarning

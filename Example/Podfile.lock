@@ -1,66 +1,42 @@
 PODS:
-  - Addition (1.1.1):
-    - Addition/NSArray (= 1.1.1)
-    - Addition/NSData (= 1.1.1)
-    - Addition/NSDate (= 1.1.1)
-    - Addition/NSDictionary (= 1.1.1)
-    - Addition/NSDictionary (= 1.1.1)
-    - Addition/NSMutableDictionary (= 1.1.1)
-    - Addition/NSObject (= 1.1.1)
-    - Addition/NSString (= 1.1.1)
-    - Addition/UIColor (= 1.1.1)
-    - Addition/UIFont (= 1.1.1)
-    - Addition/UIImage (= 1.1.1)
-    - Addition/UIView (= 1.1.1)
-  - Addition/NSArray (1.1.1)
-  - Addition/NSData (1.1.1)
-  - Addition/NSDate (1.1.1)
-  - Addition/NSDictionary (1.1.1)
-  - Addition/NSMutableDictionary (1.1.1)
-  - Addition/NSObject (1.1.1):
+  - Addition (1.2.0):
+    - Addition/NSArray (= 1.2.0)
+    - Addition/NSData (= 1.2.0)
+    - Addition/NSDate (= 1.2.0)
+    - Addition/NSDictionary (= 1.2.0)
+    - Addition/NSMutableDictionary (= 1.2.0)
+    - Addition/NSObject (= 1.2.0)
+    - Addition/NSString (= 1.2.0)
+    - Addition/UIColor (= 1.2.0)
+    - Addition/UIFont (= 1.2.0)
+    - Addition/UIImage (= 1.2.0)
+    - Addition/UIScrollView (= 1.2.0)
+    - Addition/UIView (= 1.2.0)
+  - Addition/NSArray (1.2.0)
+  - Addition/NSData (1.2.0)
+  - Addition/NSDate (1.2.0)
+  - Addition/NSDictionary (1.2.0)
+  - Addition/NSMutableDictionary (1.2.0)
+  - Addition/NSObject (1.2.0):
     - Addition/NSString
-  - Addition/NSString (1.1.1):
+  - Addition/NSString (1.2.0):
     - Addition/NSData
-  - Addition/UIColor (1.1.1)
-  - Addition/UIFont (1.1.1)
-  - Addition/UIImage (1.1.1)
-  - Addition/UIView (1.1.1)
-  - Expecta (1.0.5)
-  - "Expecta+Snapshots (2.0.0)":
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0.3)
-  - FBSnapshotTestCase (2.0.7):
-    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
-  - FBSnapshotTestCase/Core (2.0.7)
-  - FBSnapshotTestCase/SwiftSupport (2.0.7):
-    - FBSnapshotTestCase/Core
-  - Specta (1.0.5)
+  - Addition/UIColor (1.2.0)
+  - Addition/UIFont (1.2.0)
+  - Addition/UIImage (1.2.0)
+  - Addition/UIScrollView (1.2.0)
+  - Addition/UIView (1.2.0)
 
 DEPENDENCIES:
   - Addition (from `../`)
-  - Expecta
-  - "Expecta+Snapshots"
-  - FBSnapshotTestCase
-  - Specta
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Expecta
-    - "Expecta+Snapshots"
-    - FBSnapshotTestCase
-    - Specta
 
 EXTERNAL SOURCES:
   Addition:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Addition: d656bb22e287bdc6b76ba622ee801cbeb4405e03
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  "Expecta+Snapshots": 29b38dd695bc72a0ed2bea833937d78df41943ba
-  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  Addition: 43cd7381070e8c99507a34e347d4a2a4a4d76795
 
-PODFILE CHECKSUM: 3a2cac8be6c1e6b98b0c5eaaaaded6a3e48ccaea
+PODFILE CHECKSUM: 3d4a4bf39263254bc00a2068bb6a7efe9974ae15
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

@@ -21,6 +21,7 @@
 #import "UIColor+Addition.h"
 #import "UIFont+Addition.h"
 #import "UIImage+Addition.h"
+#import "UIScrollView+Addition.h"
 #import "UIView+Addition.h"
 
 FOUNDATION_EXPORT double AdditionVersionNumber;

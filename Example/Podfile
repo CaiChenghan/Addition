@@ -4,12 +4,3 @@ use_frameworks!
 target 'Addition_Example' do
   pod "Addition", :path => "../"
 end
-
-target 'Addition_Tests' do
-  pod "Addition", :path => "../"
-
-  pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
-end

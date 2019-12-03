@@ -20,5 +20,6 @@
     #import "UIImage+Addition.h"
     #import "UIView+Addition.h"
     #import "UIFont+Addition.h"
+    #import "UIScrollView+Addition.h"
 
 #endif /* Addition_h */

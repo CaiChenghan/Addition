@@ -1,8 +1,8 @@
 {
   "name": "Addition",
-  "version": "1.1.1",
-  "summary": "ios扩展类集",
-  "description": "ios扩展类集，方便ios开发。",
+  "version": "1.2.0",
+  "summary": "iOS扩展类集",
+  "description": "iOS扩展类集，方便开发。",
   "homepage": "https://github.com/CaiChenghan/Addition",
   "license": "MIT",
   "authors": {
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/CaiChenghan/Addition.git",
-    "tag": "1.1.1"
+    "tag": "1.2.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -75,6 +75,10 @@
     {
       "name": "UIFont",
       "source_files": "Addition/UIFont+Addition.{h,m}"
+    },
+    {
+      "name": "UIScrollView",
+      "source_files": "Addition/UIScrollView+Addition.{h,m}"
     }
   ]
 }
