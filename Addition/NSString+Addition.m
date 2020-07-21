@@ -214,4 +214,45 @@
     }
 }
 
+/// Unicode转中文
+- (NSString *)replaceUnicode {
+    if (self && self.length > 0) {
+        NSString *tempStr1 = [self stringByReplacingOccurrencesOfString:@"\\u"withString:@"\\U"];
+        NSString *tempStr2 = [tempStr1 stringByReplacingOccurrencesOfString:@"\""withString:@"\\\""];
+        NSString *tempStr3 = [[@"\"" stringByAppendingString:tempStr2]stringByAppendingString:@"\""];
+        NSData *tempData = [tempStr3 dataUsingEncoding:NSUTF8StringEncoding];
+        NSString *returnStr = [NSPropertyListSerialization propertyListWithData:tempData options:NSPropertyListImmutable format:NULL error:nil];
+        return [returnStr stringByReplacingOccurrencesOfString:@"\\r\\n"withString:@"\n"];
+    } else {
+        return self;
+    }
+}
+
+/// 中文转Unicode
+- (NSString *)toUnicode {
+    if (self && self.length > 0) {
+        NSUInteger length = self.length;
+        NSMutableString *str = [NSMutableString stringWithCapacity:0];
+        for (int i = 0;i < length; i++) {
+            NSMutableString *s = [NSMutableString stringWithCapacity:0];
+            NSString *subString= [self substringWithRange:NSMakeRange(i, 1)];
+            const char *cStringFromstr = [subString UTF8String];
+            if (strlen(cStringFromstr) == 3) {
+                [s appendFormat:@"\\u%x",[self characterAtIndex:i]];
+                if (s.length == 4) {
+                    [s insertString:@"00" atIndex:2];
+                } else if (s.length == 5) {
+                    [s insertString:@"0" atIndex:2];
+                }
+            } else {
+                [s appendFormat:@"%@",subString];
+            }
+            [str appendFormat:@"%@", s];
+        }
+        return str;
+    } else {
+        return nil;
+    }
+}
+
 @end

@@ -1,6 +1,6 @@
 {
   "name": "Addition",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "summary": "iOS扩展类集",
   "description": "iOS扩展类集，方便开发。",
   "homepage": "https://github.com/CaiChenghan/Addition",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/CaiChenghan/Addition.git",
-    "tag": "1.2.0"
+    "tag": "1.3.0"
   },
   "platforms": {
     "ios": "8.0"

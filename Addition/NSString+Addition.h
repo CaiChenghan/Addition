@@ -106,4 +106,10 @@
  */
 - (NSString *)decodeURLString;
 
+/// Unicode转中文
+- (NSString *)replaceUnicode;
+
+/// 中文转Unicode
+- (NSString *)toUnicode;
+
 @end
