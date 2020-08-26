@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^UIViewTapCallBack)(UITapGestureRecognizer *recognizer);
-
 @interface UIView (Addition)
 
 /**
@@ -105,16 +103,11 @@ typedef void(^UIViewTapCallBack)(UITapGestureRecognizer *recognizer);
  */
 @property (nonatomic) CGSize size;
 
+/// 获取页面控制器，可能为空
+@property (nonatomic, readonly) UIViewController *controller;
 
-#pragma mark - UIViewTapGes
-
-@property (nonatomic , copy) UIViewTapCallBack tapCallBack;
-
-/**
- 页面单击
- 
- @param callBack 单击回调
- */
-- (void)addTapGesture:(UIViewTapCallBack)callBack;
+/// 页面点击
+/// @param callBack 点击回调
+- (void)addTapGesture:(void(^)(UITapGestureRecognizer *recognizer))callBack;
 
 @end

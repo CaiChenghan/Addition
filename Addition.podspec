@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Addition"
-  s.version          = "1.3.0"
+  s.version          = "1.4.0"
   s.summary          = "iOS扩展类集"
   s.description      = <<-DESC
                         iOS扩展类集，方便开发。

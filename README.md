@@ -17,7 +17,7 @@ Addition is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-    pod 'Addition', '~>1.3.0'
+    pod 'Addition', '~>1.4.0'
 ```
 
 ## Author
@@ -30,6 +30,7 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
+- 1.4.0 UIView获取controller。
 - 1.3.0 中文与Unicode互转。
 - 1.2.0 UIScrollView侧滑返回。
 - 1.1.1 UIImage图片裁剪内存泄漏问题修复。

@@ -7,6 +7,7 @@
 //
 
 #import "AdditionViewController.h"
+#import <Addition/Addition.h>
 
 @interface AdditionViewController ()
 

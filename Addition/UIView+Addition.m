@@ -9,7 +9,13 @@
 #import "UIView+Addition.h"
 #import <objc/runtime.h>
 
-static char TapCallBack;
+static char TapCallBackKey;
+
+@interface UIView ()
+
+@property (nonatomic , copy) void(^tapCallBack)(UITapGestureRecognizer *recognizer);
+
+@end
 
 @implementation UIView (Addition)
 
@@ -176,33 +182,39 @@ static char TapCallBack;
     self.frame = frame;
 }
 
-#pragma mark - UIViewTapGes
+- (UIViewController *)controller {
+    UIViewController *controller = nil;
+    for (UIView *next = self.superview; next; next = next.superview) {
+        UIResponder *nextResponder = next.nextResponder;
+        if ([nextResponder isKindOfClass:UIViewController.class]) {
+            controller = (UIViewController*)nextResponder;
+            break;
+        }
+    }
+    return controller;
+}
 
-/**
- 页面单击
- 
- @param callBack 单击回调
- */
-- (void)addTapGesture:(UIViewTapCallBack)callBack {
+/// 页面点击
+/// @param callBack 点击回调
+- (void)addTapGesture:(void(^)(UITapGestureRecognizer *recognizer))callBack {
     self.tapCallBack = callBack;
     self.userInteractionEnabled = YES;
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAdditionAction:)];
     [self addGestureRecognizer:tapGesture];
 }
 
-- (void)tapAdditionAction:(UITapGestureRecognizer *)ges {
-    UIViewTapCallBack callBack = self.tapCallBack;
-    if (callBack) {
-        callBack(ges);
+- (void)tapAdditionAction:(UITapGestureRecognizer *)tapGestureRecognizer {
+    if (self.tapCallBack) {
+        self.tapCallBack(tapGestureRecognizer);
     }
 }
 
-- (void)setTapCallBack:(UIViewTapCallBack)tapCallBack {
-    objc_setAssociatedObject(self, &TapCallBack, tapCallBack, OBJC_ASSOCIATION_COPY_NONATOMIC);
+- (void)setTapCallBack:(void (^)(UITapGestureRecognizer *))tapCallBack {
+    objc_setAssociatedObject(self, &TapCallBackKey, tapCallBack, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (UIViewTapCallBack)tapCallBack {
-    return objc_getAssociatedObject(self, &TapCallBack);
+- (void (^)(UITapGestureRecognizer *))tapCallBack {
+    return objc_getAssociatedObject(self, &TapCallBackKey);
 }
 
 @end
