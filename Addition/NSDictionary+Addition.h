@@ -11,15 +11,6 @@
 @interface NSDictionary (Addition)
 
 /**
- get safe value
-
- @param key key
- @param hitClass hitClass
- @return hitClass object
- */
-- (id)objectForKey:(id)key hitClass:(id)hitClass;
-
-/**
  get bool value
 
  @param key key

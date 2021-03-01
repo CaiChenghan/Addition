@@ -1,8 +1,7 @@
 {
   "name": "Addition",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "summary": "iOS扩展类集",
-  "description": "iOS扩展类集，方便开发。",
   "homepage": "https://github.com/CaiChenghan/Addition",
   "license": "MIT",
   "authors": {
@@ -10,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/CaiChenghan/Addition.git",
-    "tag": "1.4.0"
+    "tag": "1.4.1"
   },
   "platforms": {
     "ios": "8.0"

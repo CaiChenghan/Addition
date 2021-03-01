@@ -1,31 +1,31 @@
 PODS:
-  - Addition (1.4.0):
-    - Addition/NSArray (= 1.4.0)
-    - Addition/NSData (= 1.4.0)
-    - Addition/NSDate (= 1.4.0)
-    - Addition/NSDictionary (= 1.4.0)
-    - Addition/NSMutableDictionary (= 1.4.0)
-    - Addition/NSObject (= 1.4.0)
-    - Addition/NSString (= 1.4.0)
-    - Addition/UIColor (= 1.4.0)
-    - Addition/UIFont (= 1.4.0)
-    - Addition/UIImage (= 1.4.0)
-    - Addition/UIScrollView (= 1.4.0)
-    - Addition/UIView (= 1.4.0)
-  - Addition/NSArray (1.4.0)
-  - Addition/NSData (1.4.0)
-  - Addition/NSDate (1.4.0)
-  - Addition/NSDictionary (1.4.0)
-  - Addition/NSMutableDictionary (1.4.0)
-  - Addition/NSObject (1.4.0):
+  - Addition (1.4.1):
+    - Addition/NSArray (= 1.4.1)
+    - Addition/NSData (= 1.4.1)
+    - Addition/NSDate (= 1.4.1)
+    - Addition/NSDictionary (= 1.4.1)
+    - Addition/NSMutableDictionary (= 1.4.1)
+    - Addition/NSObject (= 1.4.1)
+    - Addition/NSString (= 1.4.1)
+    - Addition/UIColor (= 1.4.1)
+    - Addition/UIFont (= 1.4.1)
+    - Addition/UIImage (= 1.4.1)
+    - Addition/UIScrollView (= 1.4.1)
+    - Addition/UIView (= 1.4.1)
+  - Addition/NSArray (1.4.1)
+  - Addition/NSData (1.4.1)
+  - Addition/NSDate (1.4.1)
+  - Addition/NSDictionary (1.4.1)
+  - Addition/NSMutableDictionary (1.4.1)
+  - Addition/NSObject (1.4.1):
     - Addition/NSString
-  - Addition/NSString (1.4.0):
+  - Addition/NSString (1.4.1):
     - Addition/NSData
-  - Addition/UIColor (1.4.0)
-  - Addition/UIFont (1.4.0)
-  - Addition/UIImage (1.4.0)
-  - Addition/UIScrollView (1.4.0)
-  - Addition/UIView (1.4.0)
+  - Addition/UIColor (1.4.1)
+  - Addition/UIFont (1.4.1)
+  - Addition/UIImage (1.4.1)
+  - Addition/UIScrollView (1.4.1)
+  - Addition/UIView (1.4.1)
 
 DEPENDENCIES:
   - Addition (from `../`)
@@ -35,8 +35,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Addition: 81d09be3c7a19815ca17ae5baa5a93f8af5dbd03
+  Addition: b2beaac44a7ac1855869f32c46a3ceac8e94b66f
 
 PODFILE CHECKSUM: 3d4a4bf39263254bc00a2068bb6a7efe9974ae15
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

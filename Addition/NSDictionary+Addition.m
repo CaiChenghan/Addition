@@ -11,22 +11,6 @@
 @implementation NSDictionary (Addition)
 
 /**
- get safe value
- 
- @param key key
- @param hitClass hitClass
- @return hitClass object
- */
-- (id)objectForKey:(id)key hitClass:(id)hitClass {
-    id obj = [self objectForKey:key];
-    if (hitClass && [obj isKindOfClass:hitClass]) {
-        return obj;
-    } else {
-        return [hitClass new];
-    }
-}
-
-/**
  get bool value
  
  @param key key
