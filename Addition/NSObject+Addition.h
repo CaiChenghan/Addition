@@ -1,6 +1,6 @@
 //
 //  NSObject+Addition.h
-//  MyWeather
+//  Addition
 //
 //  Created by 蔡成汉 on 15/4/8.
 //  Copyright (c) 2015年 蔡成汉. All rights reserved.

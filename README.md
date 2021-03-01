@@ -30,6 +30,7 @@ Addition is available under the MIT license. See the LICENSE file for more info.
 
 
 ## 更新说明
+- 1.5.0 NSDictionry取值方法移除。
 - 1.4.0 UIView获取controller。
 - 1.3.0 中文与Unicode互转。
 - 1.2.0 UIScrollView侧滑返回。
