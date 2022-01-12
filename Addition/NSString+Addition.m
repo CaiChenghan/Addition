@@ -191,12 +191,8 @@
  */
 - (NSString *)encodeURLString {
     NSString *tmpStr = [self copy];
-    if (tmpStr) {
-        NSString *encodedString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)tmpStr, NULL, (CFStringRef)@":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`", kCFStringEncodingUTF8));
-        return encodedString;
-    } else {
-        return tmpStr;
-    }
+    [tmpStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    return tmpStr;
 }
 
 /**
@@ -206,12 +202,8 @@
  */
 - (NSString *)decodeURLString {
     NSString *tmpStr = [self copy];
-    if (tmpStr) {
-        NSString *decodedString=(__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL, (__bridge CFStringRef)tmpStr, CFSTR(""), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
-        return decodedString;
-    } else {
-        return tmpStr;
-    }
+    [tmpStr stringByRemovingPercentEncoding];
+    return tmpStr;
 }
 
 /// Unicode转中文

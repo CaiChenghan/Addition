@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Addition"
-  s.version          = "1.5.0"
+  s.version          = "1.5.1"
   s.summary          = "iOS扩展类集"
   s.homepage         = "https://github.com/CaiChenghan/Addition"
   s.license          = 'MIT'
